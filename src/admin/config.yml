@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "src/assets/images" # Folder where user uploaded files should go
+public_folder: "/assets/images" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit
+  - label: "Home"
+    name: "home"
+    format: "json"
+    files:
+      - label: "Hero content"
+        name: "hero-content"
+        file: "src/_data/hero.json"
+        fields:
+          - {label: Title, name: title, widget: string, hint: "The title"}
+          - {label: Subtitle, name: subtitle, widget: string, hint: "The subtitle"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Href, name: href, widget: string}
+          - label: "Header Image"
+            name: "image"
+            widget: "object"
+            fields:
+              - {label: Src, name: src, widget: image}
+             
+
+
