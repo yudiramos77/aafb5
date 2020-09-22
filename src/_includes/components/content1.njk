@@ -1,17 +1,19 @@
 <section>
     <div class="row">
-        <div class="col-12">
-            <div class="content-title">
-                <h1 class="headerTitle">Title</h1>
+        <div class="{{class}}">
+            <div class="content-title mt-2 order-2">
+                <h1 class="headerTitle">{{ctitle}}</h1>
             </div>
-            <div class="content-subtitle">
-                <h2 class="headerSubtitle">SubTitle</h1>
+            <div class="content-subtitle order-1">
+                <h2 class="headerSubtitle">{{subtitle}}</h1>
             </div>
-            <div class="content-subsubtitle">
-                <h1 class="headerSubsubtitle">Subsubtitle</h1>
+            {% if subsubtitle %}
+            <div class="content-subsubtitle order-3">
+                <span class="headerSubsubtitle">{{subsubtitle}}</h1>
             </div>
-            <div class="content-body">
-                <h1 class="bodyContent">Body content</h1>
+            {% endif %}
+            <div class="content-body order-3 mt-4">
+                <div class="bodyContent">{{body}}</h1>
                 {% include "components/button.njk" %}
             </div>
         </div>
