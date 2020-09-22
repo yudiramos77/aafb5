@@ -1,0 +1,21 @@
+<div class="headerItem">
+    <div class="headerItem_figure">
+        <figure>
+            <img src="/assets/images/{{image}}" class="">
+        </figure>
+    </div>
+    <div class="headerItem_content">
+        <div class="headerTitle mb-3{% if invert %} -invert{% endif %}">
+            {{headerTitle}}
+        </div>
+        <div class="bodyContent{% if invert %} -invert{% endif %}">
+            {{ headerContent }}
+        </div>
+        {% if aside %}
+        <div class="asideButton">
+            {% set button= aside %}
+            {% include "components/button.njk" %}
+        </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<ol class="carousel-indicators">
+{% for item in items %}
+    <li data-target="#carouselExampleIndicators" data-slide-to="{{loop.index0}}"{% if loop.first %} class="active"{% endif %} ></li>
+{% endfor %}
+</ol>
+<div class="carousel-inner">
+    {% for item in items %}
+    <div class="carousel-item{% if loop.first %} active{% endif %}">
+        {% set image=item.image %}
+        {% set headerTitle=item.headerTitle %}
+        {% set headerContent=item.headerContent %}
+        {% set aside=item.aside %}
+        {% set invert=true %}
+        {% include "components/headerItem.njk" %}
+
+    </div>
+    {% endfor %}
+</div>
