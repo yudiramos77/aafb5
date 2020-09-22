@@ -5,17 +5,25 @@
         </figure>
     </div>
     <div class="headerItem_content">
-        <div class="headerTitle mb-3{% if invert %} -invert{% endif %}">
-            {{headerTitle}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="headerItem_wrapper">
+                        <div class="headerTitle mb-3{% if invert %} -invert{% endif %}">
+                            {{headerTitle}}
+                        </div>
+                        <div class="bodyContent{% if invert %} -invert{% endif %}">
+                            {{ headerContent }}
+                        </div>
+                        {% if aside %}
+                        <div class="asideButton">
+                            {% set button= aside %}
+                            {% include "components/button.njk" %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bodyContent{% if invert %} -invert{% endif %}">
-            {{ headerContent }}
-        </div>
-        {% if aside %}
-        <div class="asideButton">
-            {% set button= aside %}
-            {% include "components/button.njk" %}
-        </div>
-        {% endif %}
     </div>
 </div>
