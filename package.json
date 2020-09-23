@@ -10,8 +10,8 @@
     "watch:eleventy": "eleventy --serve",
     "watch:minify": "postcss _site/assets/css/styles.css -o _site/assets/css/styles.min.css -w",
     "minify": "postcss _site/assets/css/styles.css > _site/assets/css/styles.min.css",
-    "start": "eleventy --serve",
-    "build": "npm run sass && eleventy && npm run minify"
+    "start": "eleventy",
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
