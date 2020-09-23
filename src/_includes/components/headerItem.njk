@@ -1,7 +1,12 @@
 <div class="headerItem">
     <div class="headerItem_figure">
         <figure>
-            <img src="/assets/images/min/{{image}}" class="">
+            <img srcset="/assets/images/min/{{item.image}}.jpg 500w,
+                            /assets/images/min/{{item.image}}@2x.jpg 1200w"
+                    sizes="(max-width: 600px) 500px,
+                         1200px"
+                 src="/assets/images/min/{{item.image}}.jpg" 
+                 class="card-img-top" alt="...">
         </figure>
     </div>
     <div class="headerItem_content">
