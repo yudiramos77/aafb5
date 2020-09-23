@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+    {% for item in products %}
+        <div class="col-12 col-md-4">
+            <div class="card card-reset">
+                <img src="/assets/images/{{item.image}}" class="card-img-top" alt="...">
+                <div class="bg-white card-body mb-5 shadow-sm text-center">
+                    <h3 class="headerTitle -medium">{{item.text}}</h3>
+                    <a href="{{item.link.href}}" class="{{item.link.class}}">{{item.link.text}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

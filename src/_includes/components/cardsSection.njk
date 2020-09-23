@@ -1,0 +1,17 @@
+<section class="mt-6 {{class}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 col-md-8 d-flex flex-column text-center mx-auto">
+                <div class="content-title mt-2 order-2">
+                    <h1 class="headerTitle">{{ctitle}}</h1>
+                </div>
+                <div class="content-subtitle order-1">
+                    <h2 class="headerSubtitle">{{subtitle}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            {% include "components/cardItems.njk" %}
+        </div>
+    </div>
+</section>

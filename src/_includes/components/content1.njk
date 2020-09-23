@@ -1,21 +1,40 @@
-<section>
-    <div class="row">
-        <div class="{{class}}">
-            <div class="content-title mt-2 order-2">
-                <h1 class="headerTitle">{{ctitle}}</h1>
+<section class="mt-6">
+    <div class="container">
+        <div class="row">
+            <div class="{{class}}">
+                <div class="content-grid">
+                    <div class="item item-1">
+                        <img src="/assets/images/10-Pros-and-Cons-of-Metal-Roofing-for-Your-Home-min.png">
+                    </div>
+                    <div class="item item-2">
+                        <img src="/assets/images/hurricane-shutters-miami@2x.png">
+                    </div>
+                    <div class="item item-3">
+                        <img src="/assets/images/hurricane-windows-from-window-world@2x.png">
+                    </div>
+                    <div class="item item-4">
+                        <img src="/assets/images/b_fold-studio-66-288781-rel134ca8ab@2x.png">
+                    </div>
+                </div>
             </div>
-            <div class="content-subtitle order-1">
-                <h2 class="headerSubtitle">{{subtitle}}</h1>
-            </div>
-            {% if subsubtitle %}
-            <div class="content-subsubtitle order-3">
-                <span class="headerSubsubtitle">{{subsubtitle}}</h1>
-            </div>
-            {% endif %}
-            <div class="content-body order-3 mt-4">
-                <div class="bodyContent">{{body}}</h1>
-                {% include "components/button.njk" %}
+            <div class="{{class}} section-content1">
+                <div class="content-title mt-2 order-2">
+                    <h1 class="headerTitle">{{ctitle}}</h1>
+                </div>
+                <div class="content-subtitle order-1">
+                    <h2 class="headerSubtitle">{{subtitle}}</h1>
+                </div>
+                {% if subsubtitle %}
+                <div class="content-subsubtitle order-3">
+                    <span class="headerSubsubtitle">{{subsubtitle}}</h1>
+                </div>
+                {% endif %}
+                <div class="content-body order-3 mt-4">
+                    <div class="bodyContent">{{body | safe }}</h1>
+                        {% include "components/button.njk" %}
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
 </section>

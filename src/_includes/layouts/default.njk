@@ -11,11 +11,13 @@
   </head>
   <body>
     
-      {% include "navbar.njk" %}
+      {% include "components/navbar.njk" %}
     
       {%- block content %}
           {{ content | safe }}
       {%- endblock %}
+
+      {% include "components/footer.njk" %}
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
