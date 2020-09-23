@@ -256,7 +256,7 @@ body {
   border-radius: 0;
   text-transform: uppercase;
   min-width: 160px;
-  padding: 12px 14px;
+  padding: 12px 66px 12px 14px;
   text-align: left;
 }
 .btn:after{
@@ -271,6 +271,10 @@ body {
   color: black;
 }
 
+.btn-transparent{
+  padding: 12px 66px 12px 0;
+}
+
 .btn-link{ 
     font-family: "Oswald", sans-serif;
     font-size: 12px;
@@ -283,6 +287,9 @@ body {
     color: var(--main-color-light);
     text-decoration: underline;
 
+}
+.btn.btn-second{
+  color: var(--secondary-color);
 }
 /* Footer */
 
@@ -345,3 +352,52 @@ footer .listing_item:not(:last-child){
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* testimonials */
+.testimonial{
+  background-image: url('/assets/images/min/b_fold-studio-66-288781-rel134ca8ab@2x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767.98px){
+  .testimonial >.container >.row{
+    margin: 0 auto;
+  }
+}
+
+.rate_stars:before{
+  content: '';
+  background-image: url(/assets/images/icons/star.svg);
+  height: 12px;
+  display: block;
+  background-size: contain;
+  max-width: 60px;
+}
+.rate_stars.-five{
+  width: 60px;
+}
+.rate_stars.-four{
+  width: 48px;
+}
+.rate_stars.-three{
+  width: 36px;
+}
+.rate_stars.-two{
+  width: 24px;
+}
+.rate_stars.-one{
+  width: 12px;
+}
+@media (min-width: 768px){
+  .testimonial .carousel-control-next{
+    right: -90px;
+  }
+}
+
+@media (min-width: 768px){
+  .testimonial .carousel-control-prev{
+    left: -90px;
+  }
+}
+ 
