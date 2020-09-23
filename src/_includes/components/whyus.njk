@@ -1,0 +1,39 @@
+<section class="whyus background-dark-gradient-9-main py-6">
+    <div class="container">
+        <div class="row mx-1">
+            <div class="col-12 col-md-6 mb-4">
+
+                <div class="d-flex flex-column mb-4">
+                    <div class="content-title mt-2 order-2">
+                        <h1 class="headerTitle -invert">{{ctitle}}</h1>
+                    </div>
+                    <div class="content-subtitle order-1">
+                        <h2 class="headerSubtitle -light">{{subtitle}}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9 mb-4">
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/4bDLymVwjOQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="content-wrapper text-white-50">
+                            <p>American Aluminum Fabricators Corp. provides you with exceptional service and high quality products to achieve your home improvement project. We provide quality Impact Windows and Doors, Insulated Metal Roof, Accordion Hurricane Shutters, Railings and Decks, Patio Screens, Rain Gutters .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5">
+                {% set ctitle='Have a Home Improvement Question?' %}
+                {% set subtitle='We are here to help' %}
+                {% set body='Get a Free Consultation with our Sales Specialist' %}
+                {% include "components/cta-box.njk" %}
+            </div>
+        </div>
+    </div>
+</section>

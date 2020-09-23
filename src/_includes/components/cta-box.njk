@@ -1,0 +1,18 @@
+<div class="cta-box bg-white">
+    <div class="d-flex flex-column p-5 text-center">
+        <div class="content-title mt-2 order-2">
+            <h1 class="headerTitle">{{ctitle}}</h1>
+        </div>
+        <div class="content-subtitle order-1">
+            <h2 class="headerSubtitle">{{subtitle}}</h1>
+        </div>
+        <div class="bodyContent order-3">
+            <span class="bodyContent">{{body}}</h1>
+        </div>
+        <div class="content-cta order-4 mt-4">
+            {% set button= {text: 'Request a call', class: 'btn btn-primary', href: '#'} %}
+            {% include "components/button.njk" %}
+        </div>
+
+    </div>
+</div>
