@@ -50,6 +50,10 @@ body {
   font-size: 1rem;
   letter-spacing: 0;
 }
+.headerTitle.-large {
+  font-size: 1.2rem;
+  letter-spacing: 0;
+}
 .headerTitle.-huge {
   font-size: 3rem;
   letter-spacing: 0;
@@ -417,3 +421,20 @@ footer .listing_item:not(:last-child){
   }
 }
  
+
+/* Contact section */
+
+.contactSection-icon:before{
+  content: '';
+  height: 19px;
+  display: block;
+  background-size: contain;
+  width: 19px;
+  margin-right: 10px;
+}
+.contactSection-icon.-phone:before{
+  background-image: url(/assets/images/icons/telephone.svg);
+}
+.contactSection-icon.-email:before{
+  background-image: url(/assets/images/icons/telephone.svg);
+}
