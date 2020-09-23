@@ -288,6 +288,9 @@ body {
     text-decoration: underline;
 
 }
+.btn-link.btn-no-underline{ 
+  text-decoration: none;
+}
 .btn.btn-second{
   color: var(--secondary-color);
 }
@@ -344,6 +347,19 @@ footer .listing_item:not(:last-child){
   margin: -20px 20px 0;
   padding: 40px 20px 30px;
 }
+.card-reset.card-blog{
+  margin: 0;
+}
+.card-blog .card-body{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
 
 /* Why us */
 .whyus{

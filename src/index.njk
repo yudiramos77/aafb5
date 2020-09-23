@@ -92,12 +92,32 @@
     {% set subtitle='Financing options' %}
     {% set class='' %}
     {% include "components/cardsSection.njk" %}
-    <!-- End section Products -->
+    <!-- End section Financial -->
 
     <!-- Testimonial -->
     {% include "components/testimonial.njk" %}
 
     <!-- End Testimonial -->
+
+      <!-- Section blogs -->
+    {% set blogs=[
+      { 
+        image: 'slide1.jpg', 
+        text: 'Accordion Hurricane Shutter System Features and Benefits', 
+        link: {text: 'Learn More', class: 'btn btn-transparent btn-second', href:'#'}
+      },
+      { 
+        image: 'slide2.jpg', 
+        text: 'Accordion Hurricane Shutter System Features and Benefits the second part', 
+        link: {text: 'Learn More', class: 'btn btn-transparent btn-second', href:'#'}
+      }
+    ] %}
+    {% set products = blogs %}
+    {% set ctitle= 'Lastest Articles' %}
+    {% set subtitle='Our blogs' %}
+    {% set class='' %}
+    {% include "components/blogItem.njk" %}
+    <!-- End section blogs -->
 
 
 
