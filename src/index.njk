@@ -60,13 +60,37 @@
         link: {text: 'Know more', class: 'btn-link', href:'#'}
       }
     ] %}
-    {% set ctitle= 'Excellent Quality and Durable Products' %}
-    {% set subtitle='Why Choose our Products' %}
+    {% set ctitle= 'Explore our Aluminium Products' %}
+    {% set subtitle='Our Products' %}
     {% set class='back-main-light pt-6' %}
     {% include "components/cardsSection.njk" %}
     <!-- End section Products -->
     
     <!-- Section Why us -->
+
+    {% set ctitle= 'Excellent Quality and Durable Products' %}
+    {% set subtitle='Why Choose our products' %}
+    {% set class='back-main-light pt-6' %}
     {% include "components/whyus.njk" %}
     <!-- End section whyus -->
+
+      <!-- Section Financial -->
+    {% set financial=[
+      { 
+        image: 'slide1.jpg', 
+        text: 'Synchrony Home Impriovement', 
+        link: {text: 'Learn More', class: 'btn-link', href:'#'}
+      },
+      { 
+        image: 'slide2.jpg', 
+        text: 'HFS Financial', 
+        link: {text: 'Learn More', class: 'btn-link', href:'#'}
+      }
+    ] %}
+    {% set products = financial %}
+    {% set ctitle= 'Financial Institutions' %}
+    {% set subtitle='Financing options' %}
+    {% set class='' %}
+    {% include "components/cardsSection.njk" %}
+    <!-- End section Products -->
 
