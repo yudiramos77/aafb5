@@ -423,18 +423,8 @@ footer .listing_item:not(:last-child){
  
 
 /* Contact section */
-
-.contactSection-icon:before{
-  content: '';
-  height: 19px;
-  display: block;
-  background-size: contain;
-  width: 19px;
-  margin-right: 10px;
-}
-.contactSection-icon.-phone:before{
-  background-image: url(/assets/images/icons/telephone.svg);
-}
-.contactSection-icon.-email:before{
-  background-image: url(/assets/images/icons/telephone.svg);
+.contact-section .car-title_wrapper > img{
+  width: 20px;
+    margin-bottom: 5px;
+    filter: invert(21%) sepia(51%) saturate(6235%) hue-rotate(187deg) brightness(92%) contrast(88%);
 }
