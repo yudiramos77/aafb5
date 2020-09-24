@@ -3,7 +3,7 @@
     {% for item in products %}
         <div class="col-12 col-md-4">
             <div class="card card-reset">
-                <img src="/assets/images/min/{{item.image}}" class="card-img-top" alt="...">
+                <img src="/assets/images/min/{{item.image}}" class="card-img-top" alt="..." loading="lazy">
                 <div class="bg-white card-body mb-5 shadow-sm text-center">
                     <h3 class="headerTitle -medium">{{item.text}}</h3>
                     <a href="{{item.link.href}}" class="{{item.link.class}}">{{item.link.text}}</a>
