@@ -23,6 +23,12 @@ body {
   text-transform: none
 }
 
+.img-resp{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .mt-6{
   margin-top: 90px;
 }
@@ -216,6 +222,7 @@ body {
 .headerItem {
   width: 100%;
   height: 100%;
+  justify-content: center;
   display: flex;
   align-items: center;
 }
@@ -234,7 +241,7 @@ body {
 }
 
 .headerItem_content {
-  width: 100%;
+
   z-index: 2;
 }
 .headerItem_content .bodyContent:not(:last-child) {
