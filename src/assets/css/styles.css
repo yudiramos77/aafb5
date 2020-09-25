@@ -53,7 +53,7 @@ body {
   font-size: 2rem;
 }
 .headerTitle.-medium {
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 0;
 }
 .headerTitle.-large {
@@ -69,7 +69,7 @@ body {
   color: white !important;
 }
 
-.headerSubtitle {
+.headerSubtitle{
   font-family: "Oswald", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -80,6 +80,9 @@ body {
   position: relative;
   color: var(--main-color-light);
 }
+.headerSubtitle.-medium{
+  font-size: 15px;
+}
 .headerSubtitle.-decor-hoz{
   padding-left: 40px;
 }
@@ -89,7 +92,7 @@ body {
   width: 22px;
   background-color: var(--main-color-light);
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 12px;
 }
 .headerSubtitle.-decor-hoz.-light:before,
@@ -102,7 +105,7 @@ body {
   width: 33px;
   background-color: var(--main-color-light);
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 1px;
 
 }
@@ -124,7 +127,7 @@ body {
   background-color: var(--main-color-light);
   position: absolute;
   top: -37px;
-  left: calc(50% - 4px);
+  left: calc(50% - 5px);
 
 }
 
@@ -253,19 +256,29 @@ body {
   width: 100%;
   bottom: 0;
   right: 0;
+  top: 0;
+  left: 0;
   z-index: -1;  
 }
-.headerItem_figure figure,
-.headerItem_figure figure>img {
+.headerItem_figure picture,
+.headerItem_figure picture>img {
   height: 100%;
 }
+@media (min-width: 1024px){
+  .headerItem_figure picture,
+  .headerItem_figure picture>img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 
 .headerItem_figure,
-.headerItem_figure figure {
+.headerItem_figure picture {
   overflow: hidden;
 }
 
-.headerItem_figure figure {
+.headerItem_figure picture {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,28 +335,30 @@ body {
   border-radius: 0;
   text-transform: uppercase;
   min-width: 160px;
-  padding: 12px 66px 12px 14px;
+  padding: 14px 66px 14px 14px;
   text-align: left;
 }
 .btn:after{
   content: '⟶';
   position: absolute;
-  top: 4px;
+  top: 8px;
   right: 20px;
   font-size: 20px;
 }
 .btn-primary{
   background-color: var(--secondary-color);
   color: black;
+  letter-spacing: 2px;
+  line-height: 1;
 }
 
 .btn-transparent{
-  padding: 12px 66px 12px 0;
+  padding-left: 0;
 }
 
 .btn-link{ 
     font-family: "Oswald", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
@@ -353,6 +368,9 @@ body {
     color: var(--main-color-light);
     text-decoration: underline;
 
+}
+.btn-link.-medium{
+  font-size: 1rem;
 }
 .btn-link.btn-no-underline{ 
   text-decoration: none;
