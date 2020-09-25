@@ -218,9 +218,6 @@ body {
     outline: 0;
   }
 
-
-
-
 /* Header Item component */
 .headerItem {
   width: 100%;
@@ -447,7 +444,7 @@ footer .listing_item:not(:last-child){
 
 /* Why us */
 .whyus{
-  background-image: url('/assets/images/min/b_fold-studio-66-288781-rel134ca8ab@2x.jpg');
+  background-image: url('/assets/images/min/slider2@2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -516,7 +513,7 @@ footer .listing_item:not(:last-child){
 
 /* testimonials */
 .testimonial{
-  background-image: url('/assets/images/min/b_fold-studio-66-288781-rel134ca8ab@2x.jpg');
+  background-image: url('/assets/images/min/slider1@2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
