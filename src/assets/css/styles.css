@@ -217,6 +217,29 @@ body {
     border-color: transparent;
     outline: 0;
   }
+  @media (max-width: 991.9px){
+    .navbar .navbar-collapse{
+      height: 100vh;
+      padding-top: 25px;
+      text-align: center;
+    }
+    .navbar .collapsing {
+        -webkit-transition: none !important;
+        transition: none !important;
+        display: none !important;
+    }
+  }
+
+  .navbar .navbar-footer .card-body > img{
+      width: 20px;
+      display: block;
+      margin: 0 auto 15px auto;
+      filter: invert(21%) sepia(51%) saturate(6235%) hue-rotate(187deg) brightness(92%) contrast(88%);
+  }
+  .navbar .navbar-footer{
+    border-top: 1px solid var(--main-color);
+}
+  
 
 /* Header Item component */
 .headerItem {
@@ -362,9 +385,12 @@ body {
     letter-spacing: 0.7px;
     line-height: 1.5em;
     position: relative;
-    color: var(--main-color-light);
+    color: var(--main-color-light) !important;
     text-decoration: underline;
 
+}
+.btn-link.-dark{ 
+  color: var(--main-color) !important;
 }
 .btn-link.-medium{
   font-size: 1rem;
@@ -566,3 +592,4 @@ footer .listing_item:not(:last-child){
     margin-bottom: 5px;
     filter: invert(21%) sepia(51%) saturate(6235%) hue-rotate(187deg) brightness(92%) contrast(88%);
 }
+
