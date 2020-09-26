@@ -1,0 +1,10 @@
+{% macro renderNavListItem(entry, page) -%}
+        <li class="nav-item pr-lg-3{% if entry.url == page.url %} active{% endif %}">
+            <a href="{{ entry.url | url }}" class="nav-link btn-link  -medium -dark btn-no-underline{% if entry.url == page.url %}  font-weight-bold{% else %}  font-weight-light{% endif %}">{{ entry.title }}</a>
+        {%- if entry.children.length -%}
+    <ul>
+        {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+    </ul>
+    {%- endif -%}
+    </li>
+    {%- endmacro %}
