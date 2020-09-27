@@ -1,27 +1,14 @@
 ---
-  layout: layouts/default.njk
+  layout: layouts/inner.njk
   title: Eleventy Template title
+  permalink: contact-us/
   eleventyNavigation:
-    key: Home
-    order: 0
+    key: Contact Us
+    order: 5
 ---
 <section class="hero">
-    {% set slides=[
-      { 
-        image: 'slider1', 
-        headerTitle: 'Aluminum & Impact Glass Professionals', 
-        headerContent: 'We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available',
-        aside: {text: 'Learn more', class: 'btn btn-primary', href:'#'}
-      },
-      { 
-        image: 'slider2', 
-        headerTitle: 'Aluminum & Impact Glass Professionals', 
-        headerContent: 'We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available',
-        aside: {text: 'Learn more', class: 'btn btn-primary', href:'#'}
-      }
-    ] %}
-    {% set gradient=true %}
-    {% include "components/carousel.njk" %}
+    {% set ctitle= 'Contact us' %}
+    {% include "components/hero-inner.njk" %}
 </section>
     <!-- Section Intro -->
     {% set class='col-10 col-md-5 d-flex flex-column mx-auto' %}
