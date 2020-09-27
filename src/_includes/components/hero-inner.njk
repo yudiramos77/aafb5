@@ -1,5 +1,5 @@
 <div class="background-dark-gradient-main">
-    <div class="headerItem">
+    <div class="headerItem header-inner">
         <div class="headerItem_figure">
             <picture>
                 <img srcset="/assets/images/min/slider2.jpg 500w,
@@ -10,13 +10,19 @@
         <div class="headerItem_content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="col-12 mx-auto">
                         <div class="headerItem_wrapper">
                             <div class="headerTitle mb-3 -invert text-center">
                                 {{ctitle}}
                             </div>
                             <div class="bodyContent -invert text-center">
-                               {{subtitle}}
+                                <ul class="list-unstyled list-spaced justify-content-center">
+                                    <li><a href="/" alt="homepage">Home</a></li>
+                                    {% for item in breadcrumbs %}
+                                        <li><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></li>    
+                                    {% endfor %}
+                                    <li>{{ctitle}}</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

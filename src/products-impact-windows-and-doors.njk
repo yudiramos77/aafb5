@@ -1,12 +1,14 @@
 ---
   layout: layouts/inner.njk
   title: Eleventy Template title
+  permalink: products/impact-windows-and-doors/
   eleventyNavigation:
-    key: Products
+    key: impact windows and doors
+    parent: Products
 ---
 <section class="hero">
-    {% set ctitle= 'Products' %}
-    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Products") %}
+    {% set ctitle= 'Impact windows and Doors' %}
+    {% set navPages = collections.all | eleventyNavigationBreadcrumb("impact windows and doors") %}
     {% set breadcrumbs=navPages %}
     {% include "components/hero-inner.njk" %}
 </section>

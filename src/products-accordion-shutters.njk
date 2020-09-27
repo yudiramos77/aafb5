@@ -1,12 +1,14 @@
 ---
   layout: layouts/inner.njk
   title: Eleventy Template title
+  permalink: products/hurricane-accordion-shutters/
   eleventyNavigation:
-    key: Products
+    key: hurricane accordion shutters
+    parent: Products
 ---
 <section class="hero">
-    {% set ctitle= 'Products' %}
-    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Products") %}
+    {% set ctitle= 'Hurricane Accordion Shutters' %}
+    {% set navPages = collections.all | eleventyNavigationBreadcrumb("hurricane accordion shutters") %}
     {% set breadcrumbs=navPages %}
     {% include "components/hero-inner.njk" %}
 </section>
