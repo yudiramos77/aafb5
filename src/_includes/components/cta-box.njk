@@ -10,7 +10,7 @@
             <span class="bodyContent">{{body}}</h1>
         </div>
         <div class="content-cta order-4 mt-4">
-            {% set button= {text: 'Request a call', class: 'btn btn-primary', href: '#'} %}
+            {% set button= {text: 'Request a call', class: 'btn btn-primary', href: "tel:" + global.contact.aiphone } %}
             {% include "components/button.njk" %}
         </div>
 
