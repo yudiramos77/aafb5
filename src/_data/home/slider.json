@@ -1,0 +1,22 @@
+[
+    {
+       "image": "slider1",
+       "headerTitle": "Aluminum & Impact Glass Professionals",
+       "headerContent": "We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available",
+       "aside": {
+          "text": "Learn more",
+          "class": "btn btn-primary",
+          "href": "/products/"
+       }
+    },
+    {
+       "image": "slider2",
+       "headerTitle": "Aluminum & Impact Glass Professionals",
+       "headerContent": "We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available",
+       "aside": {
+          "text": "Learn more",
+          "class": "btn btn-primary",
+          "href": "/products/"
+       }
+    }
+ ]

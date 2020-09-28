@@ -1,0 +1,20 @@
+[
+    {
+       "image": "synchrony.jpg",
+       "text": "Synchrony Home Improvement",
+       "link": {
+          "text": "Learn More",
+          "class": "btn-link",
+          "href": "#"
+       }
+    },
+    {
+       "image": "hfs.jpg",
+       "text": "HFS Financial",
+       "link": {
+          "text": "Learn More",
+          "class": "btn-link",
+          "href": "#"
+       }
+    }
+ ]
