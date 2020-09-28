@@ -2,25 +2,20 @@
   layout: layouts/inner.njk
   title: Eleventy Template title
   eleventyNavigation:
-    key: Blogs
+    key: Blog
     order: 5
 ---
 <section class="hero">
-    {% set ctitle= 'blogs' %}
+    {% set ctitle= 'Blog' %}
     {% include "components/hero-inner.njk" %}
 </section>
     
     <!-- Section blogs -->
     {% set ctitle= 'Latest Articles' %}
-    {% set subtitle='Our blogs' %}
+    {% set subtitle='Our blog' %}
     {% set class='py-6 pt-0' %}
     {% include "components/blogItem.njk" %}
     <!-- End section blogs -->
-    <!-- Contact section -->
-    {% set ctitle= 'Contact us' %}
-    {% set subtitle='Affordable Quality.<br> Trusted Service' %}
-     {% include "components/contactSection.njk" %}
-
-    <!-- End contact section -->
+   
 
 

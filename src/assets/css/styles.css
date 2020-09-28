@@ -93,6 +93,10 @@ body {
   letter-spacing: -1.7px;
   font-size: 2rem;
 }
+.headerTitle.-small {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
 .headerTitle.-medium {
   font-size: 1.3rem;
   letter-spacing: 0;
@@ -525,6 +529,10 @@ footer .listing_item:not(:last-child){
   bottom: 0;
   right: 0;
   left: 0;
+}
+.card-blog.card-blog-related{
+  max-height: 125px;
+  overflow: hidden;
 }
 
 

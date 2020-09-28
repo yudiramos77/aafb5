@@ -8,6 +8,23 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("./src/assets/js")
         .addPassthroughCopy("./src/admin");
 
+    eleventyConfig.addFilter('dump', obj => {
+        const getCircularReplacer = () => {
+            const seen = new WeakSet();
+            return (key, value) => {
+            if (typeof value === "object" && value !== null) {
+                if (seen.has(value)) {
+                return;
+                }
+                seen.add(value);
+            }
+            return value;
+            };
+        };
+        
+        return JSON.stringify(obj, getCircularReplacer(), 4);
+        });
+
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk",
