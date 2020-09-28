@@ -1,14 +1,14 @@
 ---
   layout: layouts/inner.njk
   title: Eleventy Template title
-  permalink: products/hurricane-accordion-shutters/
+  permalink: financing/synchrony-home-improvement/
   eleventyNavigation:
-    key: hurricane accordion shutters
-    parent: Products
+    key: Synchrony Home Improvement
+    parent: Financing
 ---
 <section class="hero">
-    {% set ctitle= 'Hurricane Accordion Shutters' %}
-    {% set navPages = collections.all | eleventyNavigationBreadcrumb("hurricane accordion shutters") %}
+    {% set ctitle= 'Synchrony Home Improvement' %}
+    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Synchrony Home Improvement") %}
     {% set breadcrumbs=navPages %}
     {% include "components/hero-inner.njk" %}
 </section>
@@ -20,7 +20,38 @@
     {% include "components/content1.njk" %}  
     <!-- end section intro -->
     <!-- Section Products -->
-    {% set products= products.items %}
+    {% set products=[
+      { 
+        image: 'impact.jpg', 
+        text: 'Impact Windows & Doors', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      },
+      { 
+        image: 'roof.jpg', 
+        text: 'Metal Roofing', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      },
+       { 
+        image: 'pergola.jpg', 
+        text: 'Aluminum Pergolas', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      },
+      { 
+        image: 'accordion.jpg', 
+        text: 'Accordion Hurricane Shutters', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      },
+       { 
+        image: 'fence.jpg', 
+        text: 'Fencing and Decking', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      },
+      { 
+        image: 'gutter.jpg', 
+        text: 'Seamless rain gutters', 
+        link: {text: 'Learn more', class: 'btn-link', href:'#'}
+      }
+    ] %}
     {% set ctitle= 'Explore our Aluminum and Glass Products' %}
     {% set subtitle='Our Products' %}
     {% set class='back-main-light pt-6' %}
@@ -36,7 +67,7 @@
     <!-- End section whyus -->
 
       <!-- Section Financial -->
-    {% set financial=financial.financial %}
+        {% set financial=financial.financial %}
     {% set products = financial %}
     {% set ctitle= 'Financial Institutions' %}
     {% set subtitle='Financing options' %}

@@ -65,18 +65,7 @@
     <!-- End section whyus -->
 
       <!-- Section Financial -->
-    {% set financial=[
-      { 
-        image: 'synchrony.jpg', 
-        text: 'Synchrony Home Improvement', 
-        link: {text: 'Learn More', class: 'btn-link', href:'#'}
-      },
-      { 
-        image: 'hfs.jpg', 
-        text: 'HFS Financial', 
-        link: {text: 'Learn More', class: 'btn-link', href:'#'}
-      }
-    ] %}
+    {% set financial=financial.financial %}
     {% set products = financial %}
     {% set ctitle= 'Financial Institutions' %}
     {% set subtitle='Financing options' %}
