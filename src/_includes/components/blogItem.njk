@@ -11,16 +11,16 @@
             </div>
         </div>
         <div class="row mt-5">
-            {% for item in products %}
+            {%- for post in collections.post -%}
             <div class="col-12 col-md-6 mb-4 mb-md-0">
                 <div class="card card-reset card-blog background-light-gradient-main -invert">
-                    <img src="/assets/images/min/{{item.image}}" class="card-img-top" alt="..." loading="lazy">
+                    <img src="/assets/images/min/{{ post.data.image }}" class="card-img-top" alt="..." loading="lazy">
                     <div class="card-body d-flex flex-column justify-content-end p-5">
                         <div class="card-body_title">
-                            <h3 class="headerTitle -medium mb-0 ">{{item.text}}</h3>
+                            <h3 class="headerTitle -medium mb-0 ">{{ post.data.title }}</h3>
                         </div>
                         <div class="carb-body_link">
-                            <a href="{{item.link.href}}" class="{{item.link.class}}">{{item.link.text}}</a>
+                            <a href="/posts/{{ post.fileSlug }}/" class="btn btn-transparent btn-second">Read more</a>
                         </div>
                         
                     </div>
