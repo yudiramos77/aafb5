@@ -1,0 +1,25 @@
+<section class="mt-1">
+    <div class="container">
+        <div class="row">
+            <div class="{{class}} section-content1 mt-5">
+                <div class="content-title mt-2 order-2">
+                    <h1 class="headerTitle">{{ctitle}}</h1>
+                </div>
+                {% if subtitle %}
+                <div class="content-subtitle order-1">
+                    <h2 class="headerSubtitle -decor-hoz -medium">{{subtitle}}</h1>
+                </div>
+                {% endif %}
+                {% if subsubtitle %}
+                <div class="content-subsubtitle order-3">
+                    <span class="headerSubsubtitle">{{subsubtitle}}</h1>
+                </div>
+                {% endif %}
+
+                <div class="content-body order-3 mt-4">
+                    <div class="bodyContent">{{body | safe }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
