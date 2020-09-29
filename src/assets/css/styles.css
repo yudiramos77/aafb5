@@ -666,10 +666,11 @@ footer .listing_item:not(:last-child){
 .styled-list{
   position: relative;
   padding: 60px 0;
+  margin: 30px 0;
 }
 @media (min-width: 768px){
   .styled-list{
-   margin: 30px 0;
+ 
     background-image: url('/assets/images/min/slider1@2x.jpg');
     background-position: center;
     background-repeat: no-repeat;
