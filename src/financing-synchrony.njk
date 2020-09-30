@@ -12,59 +12,68 @@
     {% set breadcrumbs=navPages %}
     {% include "components/hero-inner.njk" %}
 </section>
-    <!-- Section Intro -->
-    {% set class='col-10 col-md-5 d-flex flex-column mx-auto' %}
-    {% set ctitle= 'Aluminum & Impact Glass Experts' %}
-    {% set subtitle='American Aluminum Fabricators' %}
-    {% set body='<p class="mb-5">American Aluminum Fabricators Corp. provides you with exceptional service and high quality products to achieve your home improvement project. We take your idea and make it a reality whether for your home or business. We provide quality Accordion Hurricane Shutters, High Impact Windows and Doors, Railings and Decks, Patio Screens, Rain Gutters and Coming Soon Insulated Metal Roofs.r custom doors for a new project, a homeowner shopping for the best value in replacement doors.</p><p><a href="#" class="btn btn-primary">Know more</a></p>' %}
-    {% include "components/content1.njk" %}  
-    <!-- end section intro -->
-    <!-- Section Products -->
-   {% set products= products.items %}
-    {% set ctitle= 'Explore our Aluminum and Glass Products' %}
-    {% set subtitle='Our Products' %}
-    {% set class='back-main-light pt-6' %}
-    {% include "components/cardsSection.njk" %}
-    <!-- End section Products -->
+   
+
+    <!-- Section Styled list -->
+    <section class="mt-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-8 d-flex flex-column mt-5 mx-auto section-content1 mt-5">
+                <div class="content-title mt-2 order-2">
+                    <h1 class="headerTitle">Expand your purchasing power with Promotional Financing through Synchrony.</h1>
+                </div>
+            
+                <div class="content-subtitle order-1">
+                    <h2 class="headerSubtitle -decor-hoz -medium">Financing</h1>
+                </div>
+              
+
+
+                <div class="content-body order-3">
+                    <div class="bodyContent -dark">
+                      <div style="width:100%;">
+                        
+                        <div style="padding-top:20px">
+                        <div style="">Synchrony is one of the nation’s premier  consumer financial services companies. Our roots in consumer finance trace back to 1932, and today we are the largest provider of private label credit cards in the United States based on purchase volume and receivables.</div>
+                        </div>
+                        <div style="padding:20px 20px">
+                        <div style="">
+                        <ul style="margin:0px;padding:0px">
+                        <li style="padding:3px 0px">A simple application process, and fast credit decisions</li>
+                        <li style="padding:3px 0px">Unsecured, revolving credit lines</li>
+                        <li style="padding:0px 0px 3px 0px">Promotional financing options<sup>1</sup></li>
+                        <li style="padding:3px 0px">Convenient monthly payment options</li>
+                        <li style="padding:3px 0px">Online account management</li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div style="font-size:10px;line-height:12px;text-align:left"><sup>1</sup>Subject to credit approval. Minimum monthly payments required. See store for details.</div>
+                        <div style="font-size:10px;line-height:12px;text-align:left">For all promotions: Qualifying purchase must be made with your Home Design credit card issued by Synchrony Bank and a $29 account activation fee will apply and be charged at the time first purchase posts to account. For new accounts: Purchase APR is 26.99%; Minimum Monthly Interest Charge is $2. Existing cardholders should see their credit card agreement for their applicable terms. Subject to credit approval.</div>
+                        <div style="padding-top:20px">
+                        <div align="left" valign="middle" style="float:left;">
+                        <img src="https://toolbox.mysynchrony.com/images/SF_logo_goldcharcoal_transparent_rgb_250px.png" width="304" height="108" style="max-width:304px;max-height:108px">
+                        </div>
+                        <div align="left" style="float:right;margin-top:40px;">
+
+                        <form name="0.1_eTailAppForm" action="https://etail.mysynchrony.com/eapply/eapply.action" method="post" target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}"> 
+                        <input type="hidden" name="mid" value="5348121730682844">
+                        <input type="hidden" name="pcgc" value="P100">
+                        <input type="submit" value="Apply Online" style="background-color:#212471;border-radius:5px;color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;line-height:20px;padding:10px 15px;text-align:center">
+                        </form>
+
+                        </div>
+                        <div style="clear:both"></div>
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     
-    <!-- Section Why us -->
-
-    {% set ctitle= '“ Excellent Quality & Durable Products! ”' %}
-    {% set subtitle='Why Choose our products' %}
-    {% set class='back-main-light pt-6' %}
-    {% include "components/whyus.njk" %}
-    <!-- End section whyus -->
-
-      <!-- Section Financial -->
-        {% set financial=financial.financial %}
-    {% set products = financial %}
-    {% set ctitle= 'Financial Institutions' %}
-    {% set subtitle='Financing options' %}
-    {% set class='' %}
-    {% include "components/cardsSection.njk" %}
-    <!-- End section Financial -->
-
-
-
-      <!-- Section blogs -->
-     
-    {% set ctitle= 'Lastest Articles' %}
-    {% set subtitle='Our blogs' %}
-    {% set class='mt-5 back-main-light pt-6 py-6' %}
-    {% include "components/blogItem.njk" %}
-    <!-- End section blogs -->
-
-    <!-- Testimonial -->
-    {% include "components/testimonial.njk" %}
-
-    <!-- End Testimonial -->
-
-
-    <!-- Contact section -->
-    {% set ctitle= 'Contact us' %}
-    {% set subtitle='Affordable Quality.<br> Trusted Service' %}
-     {% include "components/contactSection.njk" %}
-
-    <!-- End contact section -->
-
+    
 

@@ -5,6 +5,7 @@
   --main-color-mega-lightest: #EEF4FA;
   --gray-color: #656565;
   --secondary-color: #FFDD00;
+  --body-color-dark: #3b444c;
   --body-color: #758799;
   --small-space: 10px;
   --medium-space: 20px;
@@ -188,6 +189,9 @@ body {
 
 .bodyContent {
   color: var(--body-color);
+}
+.bodyContent.-dark {
+  color: var(--body-color-dark);
 }
 
 /* background color and gradients *
