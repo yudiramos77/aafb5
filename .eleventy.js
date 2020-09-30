@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("./src/assets/images")
         .addPassthroughCopy("./src/assets/css")
         .addPassthroughCopy("./src/assets/js")
+        .addPassthroughCopy("./src/assets/lightbox")
         .addPassthroughCopy("./src/admin");
 
     eleventyConfig.addFilter('dump', obj => {
@@ -28,7 +29,7 @@ module.exports = function (eleventyConfig) {
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk",
-        templateFormats: ["html", "md", "njk", "eot", "ttf", "woff", "woff2", "svg", "jpg", "png", "css", "svg", "yml"],
+        templateFormats: ["html", "md", "njk", "eot", "ttf", "woff", "woff2", "svg", "jpg", "png", "css", "svg", "yml", "gif"],
         dir: {
             input: "src",
             output: "_site",
