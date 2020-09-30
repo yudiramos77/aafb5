@@ -1,11 +1,9 @@
 <div class="headerItem">
     <div class="headerItem_figure">
         <picture>
-            <img srcset="/assets/images/min/{{item.image}}.jpg 500w,
-                            /assets/images/min/{{item.image}}@2x.jpg 1200w"
-                    sizes="(max-width: 500px) 500px,
-                         1200px"
-                 src="/assets/images/min/{{item.image}}.jpg" alt="..." loading="lazy">
+            <source srcset="/assets/images/min/{{item.image}}.jpg" media="(max-width:500px)">
+            <source srcset="/assets/images/min/{{item.image}}@2x.jpg.jpg" media="(min-width:501px)">
+            <img src="/assets/images/min/{{item.image}}.jpg" alt="..." loading="lazy">
         </picture>
     </div>
     <div class="headerItem_content">
