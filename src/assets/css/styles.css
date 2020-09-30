@@ -736,3 +736,63 @@ footer .listing_item:not(:last-child){
     top: 10px;
 }
 
+/* Styled List */
+.block-quote{
+  position: relative;
+  padding: 85px 0 60px;
+  margin: 30px 0;
+  color: var(--secondary-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  line-height: 1.5em;
+}
+@media (min-width: 768px){
+  .block-quote{
+    background-image: url('/assets/images/min/slider1@2x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+@media (max-width: 767.98px){
+  .block-quote{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url('/assets/images/min/slider1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+.block-quote:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgb(32, 39, 119);
+  background: linear-gradient(180deg, rgba(32, 39, 119, 0.70) 0%, rgba(16, 20, 60, 1) 100%);
+}
+.block-quote_icon:before{
+  content: '”';
+  position: absolute;
+  width: 42px;
+  height: 45px;
+  top: -50px;
+  left: 10px;
+  display: block;
+  line-height: 1;
+  font-size: 80px;
+  color: white;
+
+}

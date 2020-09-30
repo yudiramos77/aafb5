@@ -1,5 +1,5 @@
 ---
-  layout: layouts/inner.njk
+  layout: layouts/inner-slick.njk
   title: Eleventy Template title
   permalink: products/hurricane-accordion-shutters/
   eleventyNavigation:
@@ -19,6 +19,14 @@
     {% set body=products.accordions.content %}
     {% include "components/content2.njk" %}  
     <!-- end section intro -->
+
+    <!-- Section product gallery -->
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'Protect your assets against the elements with Accordion Hurricane Shutters' %}
+    {% set subtitle='Products' %}
+    {% set body=products.accordions.content %}
+    {% include "components/gallery.njk" %}  
+    <!-- End Section product gallery -->
     
     <!-- Section Why us -->
     {% set ctitle= '“ Excellent Quality & Durable Products! ”' %}
