@@ -6,34 +6,17 @@
             </div>
             <div class="col-10 col-md-8 mx-auto">
                 <div class="gallery">
-                    <div>
-                        <a href="/assets/images/min/impact.jpg" data-lightbox="gallery">
+                {% for item in gallery %}
+                      <div>
+                        <a href="{{item.src}}" data-lightbox="gallery">
                             <picture>
-                                <source srcset="/assets/images/min/impact.jpg" media="(max-width:500px)">
-                                <source srcset="/assets/images/min/impact@2x.jpg" media="(min-width:501px)">
-                                <img src="/assets/images/min/impact.jpg" alt="..." loading="lazy" class="img-resp" >
+                                <source srcset="{{item.src}}" media="(max-width:500px)">
+                                <source srcset="{{item.src}}" media="(min-width:501px)">
+                                <img src="{{item.src}}" alt="{{item.alt}}" loading="lazy" class="img-resp" >
                             </picture>
                         </a>
                     </div>
-                    <div>
-                        
-                        <a href="/assets/images/min/roof.jpg" data-lightbox="gallery">
-                            <picture>
-                                <source srcset="/assets/images/min/roof.jpg" media="(max-width:500px)">
-                                <source srcset="/assets/images/min/roof@2x.jpg" media="(min-width:501px)">
-                                <img src="/assets/images/min/roof.jpg" alt="..." loading="lazy" class="img-resp" >
-                            </picture>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/assets/images/min/pergola.jpg" data-lightbox="gallery">
-                            <picture>
-                                <source srcset="/assets/images/min/pergola.jpg" media="(max-width:500px)">
-                                <source srcset="/assets/images/min/pergola@2x.jpg" media="(min-width:501px)">
-                                <img src="/assets/images/min/pergola.jpg" alt="..." loading="lazy" class="img-resp" >
-                            </picture>
-                        </a>
-                    </div>
+                {% endfor %}
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Product's image gallery"
     name: "gallery"
     files:
-      - label: "Accordion Shutters Gallery"
+      - label: "Accordion Shutters"
         name: "image-accordion-gallery"
         file: "src/_data/products/accordion.json"
         fields:
@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "src", name: "src", widget: "image"}
               - {label: "alt", name: "alt", widget: "string"}
-      - label: "Impact Windows Gallery"
+      - label: "Impact Windows"
         name: "image-windows-gallery"
         file: "src/_data/products/impact.json"
         fields:
@@ -38,4 +38,43 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "src", name: "src", widget: "image"}
               - {label: "alt", name: "alt", widget: "string"}
-
+      - label: "Metal Roofing"
+        name: "image-roofing-gallery"
+        file: "src/_data/products/roofing.json"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "list"
+            fields:
+              - {label: "src", name: "src", widget: "image"}
+              - {label: "alt", name: "alt", widget: "string"}
+      - label: "Aluminum Pergolas"
+        name: "image-pergolas-gallery"
+        file: "src/_data/products/pergola.json"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "list"
+            fields:
+              - {label: "src", name: "src", widget: "image"}
+              - {label: "alt", name: "alt", widget: "string"}
+      - label: "Fencing and Decking"
+        name: "image-fencing-gallery"
+        file: "src/_data/products/fencing.json"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "list"
+            fields:
+              - {label: "src", name: "src", widget: "image"}
+              - {label: "alt", name: "alt", widget: "string"}
+      - label: "Seamless Gutters"
+        name: "image-gutters-gallery"
+        file: "src/_data/products/gutters.json"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "list"
+            fields:
+              - {label: "src", name: "src", widget: "image"}
+              - {label: "alt", name: "alt", widget: "string"}
