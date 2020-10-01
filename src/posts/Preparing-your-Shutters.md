@@ -1,8 +1,10 @@
 ---
-  layout: layouts/posts.njk
-  title: Preparing your shutters
-  tags: post
-  image: accordion-blog2.jpg
+layout: layouts/posts.njk
+title: Preparing your shutters
+tags: post
+image: accordion-blog2.jpg
+date: 2020-10-01T05:11:02.678Z
+thumbnail: /assets/images/min/accordion-blog2.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nunc nec turpis vehicula pretium. Pellentesque accumsan at dolor ac pretium. Nunc maximus elit eget tempus malesuada. Nulla turpis nisl, elementum non quam porta, lacinia commodo lectus. Fusce fringilla ex mi, et elementum urna ornare sit amet. Proin vel erat vel nulla rhoncus faucibus in pharetra nibh. Suspendisse eu consequat mauris. Nulla aliquet sed dui nec tincidunt. Cras finibus purus vel purus porttitor, a viverra nulla ultricies.
