@@ -66,6 +66,9 @@ body {
 .dropdown-animated:hover .dropdown-menu {
   transform: scale(1);
 } */
+.dropdown-item.active, .dropdown-item:active{
+  background: transparent;
+}
 
 .headerSubtitle.-medium{
   font-size: 15px;
@@ -235,6 +238,12 @@ body {
 .back-main-light{
   background-color: var(--main-color-mega-lightest);
 }
+@media (max-width: 767.9px){
+  .back-main-light-sm{
+    background-color: var(--main-color-mega-lightest);
+  }
+}
+
 /* hero slider and heroes */
 
 @media (min-width: 768px){
