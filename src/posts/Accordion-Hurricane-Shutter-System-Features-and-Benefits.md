@@ -2,7 +2,6 @@
 layout: layouts/posts.njk
 title: Accordion Hurricane Shutter System Features and Benefits
 tags: post
-image: accordion-blog1.jpg
 date: 2020-10-01T04:55:55.669Z
 thumbnail: /assets/images/min/accordion-blog.jpg
 ---
