@@ -1,4 +1,4 @@
-<section class="mt-6 {{class}}">
+<section class="mt-6 {{class}} blogs">
     <div class="container">
         <div class="row">
             <div class="col-11 col-md-8 d-flex flex-column text-center mx-auto">
@@ -12,7 +12,7 @@
         </div>
         <div class="row mt-5">
             {%- for post in collections.post -%}
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <div class="col-12 col-md-6 mb-4">
                 <div class="card card-reset card-blog background-light-gradient-main -invert">
                     <img src="{{ post.data.thumbnail }}" class="card-img-top" alt="..." loading="lazy">
                     <div class="card-body d-flex flex-column justify-content-end p-5">

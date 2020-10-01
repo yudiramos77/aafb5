@@ -812,3 +812,56 @@ footer .listing_item:not(:last-child){
   color: white;
 
 }
+
+/* Blogs */
+.bodyContent.posts{
+  /* line-height: 1; */
+}
+@media (min-width: 768px){
+  .bodyContent.posts{
+    margin-top: 60px;
+  }
+}
+
+
+.bodyContent.posts ul,.bodyContent.posts ol{
+  padding-left: 25px;
+}
+.bodyContent.posts ul li{
+  list-style-type: square;
+  margin-bottom: 15px;
+}
+.bodyContent.posts ol li{
+  margin-bottom: 15px;
+}
+.bodyContent.posts.h1,
+.bodyContent.posts.h2,
+.bodyContent.posts.h3,
+.bodyContent.posts.h4,
+.bodyContent.posts.h5,
+.bodyContent.posts.h6,
+.bodyContent.posts h1,
+.bodyContent.posts h2,
+.bodyContent.posts h3,
+.bodyContent.posts h4,
+.bodyContent.posts h5,
+.bodyContent.posts h6 {
+  margin: 1.6rem 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.blogs .card-reset img{
+  min-height: 270px;
+}
+@media (min-width: 768px){
+  .blogs .card-reset img{
+    height: 300px;
+  }
+}
+.card-reset.card-blog-related a{
+  border-bottom: 3px solid var(--secondary-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+

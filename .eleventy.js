@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("./src/assets/lightbox")
         .addPassthroughCopy("./src/admin");
 
+    eleventyConfig.addLayoutAlias("posts", "layouts/posts.njk");
     eleventyConfig.addFilter('dump', obj => {
         const getCircularReplacer = () => {
             const seen = new WeakSet();

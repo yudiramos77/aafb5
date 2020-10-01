@@ -1,7 +1,5 @@
 ---
-layout: layouts/posts.njk
 title: Preparing your shutters
-tags: post
 image: accordion-blog2.jpg
 date: 2020-10-01T05:11:02.678Z
 thumbnail: /assets/images/min/accordion-blog2.jpg
