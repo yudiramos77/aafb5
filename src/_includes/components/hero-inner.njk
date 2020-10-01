@@ -18,6 +18,9 @@
                             <div class="bodyContent -invert text-center">
                                 <ul class="list-unstyled list-spaced justify-content-center">
                                     <li><a href="/" alt="homepage">Home</a></li>
+                                    {% if staticPath %}
+                                    <li><a href="{{staticPath.url}}" alt="{{staticPath.alt}}">{{staticPath.text}}</a></li>
+                                    {% endif %}
                                     {% for item in breadcrumbs %}
                                         <li><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></li>    
                                     {% endfor %}
