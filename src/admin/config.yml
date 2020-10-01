@@ -15,11 +15,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Gallery"
+  - label: "Product's image gallery"
     name: "gallery"
     files:
-      - label: "Image Gallery"
-        name: "image-gallery"
+      - label: "Accordion Shutters Gallery"
+        name: "image-accordion-gallery"
         file: "src/_data/products/accordion.json"
         fields:
           - label: "Image"
@@ -28,5 +28,14 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "src", name: "src", widget: "image"}
               - {label: "alt", name: "alt", widget: "string"}
-                
+      - label: "Impact Windows Gallery"
+        name: "image-windows-gallery"
+        file: "src/_data/products/impact.json"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "list"
+            fields:
+              - {label: "src", name: "src", widget: "image"}
+              - {label: "alt", name: "alt", widget: "string"}
 

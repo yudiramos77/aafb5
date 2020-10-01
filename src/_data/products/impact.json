@@ -1,6 +1,13 @@
-[
-    {"src": "/assets/images/min/hurricane-shutters-miami.jpg"},
-    {"src": "/assets/images/min/hurricane-shutters-miami.jpg"},
-    {"src": "/assets/images/min/hurricane-shutters-miami.jpg"},
-    {"src": "/assets/images/min/hurricane-shutters-miami.jpg"}
-]
+{
+    "image": [
+      {
+        "src": "/assets/images/min/hurricane-shutters-miami.jpg",
+        "alt": "asdasd"
+      },
+      {
+        "src": "/assets/images/min/hurricane-shutters-miami.jpg",
+        "alt": "asdasd"
+      }
+    ]
+}
+  
