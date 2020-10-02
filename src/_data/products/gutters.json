@@ -1,16 +1,24 @@
 {
   "image": [
     {
-      "src": "/assets/images/min/hurricane-shutters-miami.jpg",
-      "alt": "impact window"
+      "src": "/assets/images/min/seamless-rain-gutters-slides-1.jpg",
+      "alt": "Seamless rain gutters"
     },
     {
-      "src": "/assets/images/min/impact.jpg",
-      "alt": "impact"
+      "src": "/assets/images/min/seamless-rain-gutters-slides-2.jpg",
+      "alt": "Seamless rain gutters"
     },
     {
-      "src": "/assets/images/min/slider2.jpg",
-      "alt": "impact windo"
+      "src": "/assets/images/min/seamless-rain-gutters-slides-3.jpg",
+      "alt": "Seamless rain gutters"
+    },
+    {
+      "src": "/assets/images/min/seamless-rain-gutters-slides-4.jpg",
+      "alt": "Seamless rain gutters"
+    },
+    {
+      "src": "/assets/images/min/seamless-rain-gutters-slides-5.jpg",
+      "alt": "Seamless rain gutters"
     }
   ]
 }

@@ -1,16 +1,24 @@
 {
   "image": [
     {
-      "src": "/assets/images/min/hurricane-shutters-miami.jpg",
-      "alt": "impact window"
+      "src": "/assets/images/min/metal-roofing-1.jpg",
+      "alt": "Metal Roofing"
     },
     {
-      "src": "/assets/images/min/impact.jpg",
-      "alt": "impact"
+      "src": "/assets/images/min/metal-roofing-2.jpg",
+      "alt": "Metal Roofing"
     },
     {
-      "src": "/assets/images/min/slider2.jpg",
-      "alt": "impact windo"
+      "src": "/assets/images/min/metal-roofing-3.jpg",
+      "alt": "Metal Roofing"
+    },
+    {
+      "src": "/assets/images/min/metal-roofing-4.jpg",
+      "alt": "Metal Roofing"
+    },
+    {
+      "src": "/assets/images/min/metal-roofing-5.jpg",
+      "alt": "Metal Roofing"
     }
   ]
 }

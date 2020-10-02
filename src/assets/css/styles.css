@@ -3,8 +3,10 @@
   --main-color-light: #0F70A4;
   --main-color-lightest: #9DBEE1;
   --main-color-mega-lightest: #EEF4FA;
+  --white-color-transparent: rgba(255, 255, 255, 0.8);
   --gray-color: #656565;
   --secondary-color: #FFDD00;
+  --secondary-color-light: rgba(255, 221, 0, 0.75);
   --body-color-dark: #3b444c;
   --body-color: #758799;
   --small-space: 10px;
@@ -762,7 +764,7 @@ footer .listing_item:not(:last-child){
   position: relative;
   padding: 85px 0 60px;
   margin: 30px 0;
-  color: var(--secondary-color);
+  color: var(--secondary-color-light);
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -814,7 +816,7 @@ footer .listing_item:not(:last-child){
   display: block;
   line-height: 1;
   font-size: 80px;
-  color: white;
+  color: var(--white-color-transparent);
 
 }
 
@@ -854,6 +856,13 @@ footer .listing_item:not(:last-child){
   margin: 1.6rem 0;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.bodyContent ul:not(.list-unlisted){
+  padding-left: 20px;
+}
+.bodyContent ul:not(.list-unlisted) li:not(:last-child){
+  margin-bottom: 10px;
 }
 .blogs .card-reset img{
   min-height: 270px;
