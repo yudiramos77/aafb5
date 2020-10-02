@@ -269,6 +269,11 @@ body {
   }
 }
 
+.simple-carousel .carousel-control-next-icon, 
+.simple-carousel .carousel-control-prev-icon {
+  background-color: var(--main-color)
+}
+
 /* Navigation component */
   .logo-header{
     width: 140px;
@@ -862,6 +867,46 @@ footer .listing_item:not(:last-child){
   border-bottom: 3px solid var(--secondary-color);
   text-decoration: none;
   display: inline-block;
+}
+
+li.list-white:before{
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+li.list-ivory:before{
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #ede2c0;
+  border: 1px solid black;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+li.list-beige:before{
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #9e8c72;
+  border: 1px solid black;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+li.list-bronze:before{
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #301a0b;
+  border: 1px solid black;
+  display: inline-flex;
+  margin-right: 20px;
 }
 
 

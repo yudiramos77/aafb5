@@ -1,12 +1,16 @@
 {
   "image": [
     {
-      "src": "/assets/images/min/hurricane-windows-from-window-world@3x.jpg",
-      "alt": "asdasd"
+      "src": "/assets/images/min/accordion-shutter-1.jpg",
+      "alt": "Accordion Shutter"
     },
     {
-      "src": "/assets/images/min/slider1.jpg",
-      "alt": "image2"
+      "src": "/assets/images/min/accordion-shutter-2.jpg",
+      "alt": "Accordion Shutter"
+    },
+    {
+      "src": "/assets/images/min/accordion-shutter-3.jpg",
+      "alt": "Accordion Shutter"
     }
   ]
 }

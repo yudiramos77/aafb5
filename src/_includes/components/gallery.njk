@@ -1,23 +1,31 @@
-<div class="gallery-slick mt-4">
+<div class="gallery-slick mt-4 {{ class }}">
     <div class="container">
         <div class="row">
-            <div class="col-10 col-md-8 mx-auto">
-                <h1 class="-medium headerTitle mb-4">Product Gallery</h1>
-            </div>
-            <div class="col-10 col-md-8 mx-auto">
-                <div class="gallery">
-                {% for item in gallery %}
-                      <div>
-                        <a href="{{item.src}}" data-lightbox="gallery">
-                            <picture>
-                                <source srcset="{{item.src}}" media="(max-width:500px)">
-                                <source srcset="{{item.src}}" media="(min-width:501px)">
-                                <img src="{{item.src}}" alt="{{item.alt}}" loading="lazy" class="img-resp" >
-                            </picture>
-                        </a>
+            <div class="col-10 col-md-8 mx-auto ">
+                <div class="d-flex flex-column my-4 align-items-center">
+                    <div class="content-title mt-2 order-2">
+                        <h1 class="headerTitle">{{ctitle}}</h1>
                     </div>
-                {% endfor %}
+                    <div class="content-subtitle order-1">
+                        <h2 class="headerSubtitle -decor-vert -medium">{{subtitle}}</h1>
+                    </div>
                 </div>
+
+
+                    <div class="gallery">
+                    {% for item in gallery %}
+                        <div>
+                            <a href="{{item.src}}" data-lightbox="gallery">
+                                <picture>
+                                    <source srcset="{{item.src}}" media="(max-width:500px)">
+                                    <source srcset="{{item.src}}" media="(min-width:501px)">
+                                    <img src="{{item.src}}" alt="{{item.alt}}" loading="lazy" class="img-resp" >
+                                </picture>
+                            </a>
+                        </div>
+                    {% endfor %}
+                    </div>
+
             </div>
         </div>
     </div>

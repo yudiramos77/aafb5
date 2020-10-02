@@ -1,16 +1,20 @@
 {
   "image": [
     {
-      "src": "/assets/images/min/hurricane-shutters-miami.jpg",
-      "alt": "impact window"
+      "src": "/assets/images/min/impact-glass-doors-1.jpg",
+      "alt": "impact glass doors"
     },
     {
-      "src": "/assets/images/min/impact.jpg",
-      "alt": "impact"
+      "src": "/assets/images/min/impact-glass-doors-2.jpg",
+      "alt": "impact glass doors"
     },
     {
-      "src": "/assets/images/min/slider2.jpg",
-      "alt": "impact windo"
+      "src": "/assets/images/min/impact-glass-doors-3.jpg",
+      "alt": "impact glass doors"
+    },
+    {
+      "src": "/assets/images/min/impact-glass-doors-4.jpg",
+      "alt": "impact glass doors"
     }
   ]
 }
