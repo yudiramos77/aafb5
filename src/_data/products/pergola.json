@@ -1,16 +1,49 @@
 {
   "image": [
     {
-      "src": "/assets/images/min/hurricane-shutters-miami.jpg",
-      "alt": "impact window"
+      "src": "/assets/images/min/pergola-1.jpg",
+      "alt": "Pergolas"
     },
     {
-      "src": "/assets/images/min/impact.jpg",
-      "alt": "impact"
+      "src": "/assets/images/min/pergola-2.jpg",
+      "alt": "Pergolas"
     },
     {
-      "src": "/assets/images/min/slider2.jpg",
-      "alt": "impact windo"
+      "src": "/assets/images/min/pergola-3.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-4.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-5.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-6.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-7.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-8.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-9.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-10.jpg",
+      "alt": "Pergolas"
+    },
+    {
+      "src": "/assets/images/min/pergola-11.jpg",
+      "alt": "Pergolas"
     }
+    
   ]
 }
