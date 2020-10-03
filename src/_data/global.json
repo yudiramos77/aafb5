@@ -12,5 +12,12 @@
       "email": "INFO@AMERICANALUMINUMFABRICATORS.COM",
       "address": "7275 NW 77TH ST, <br> MEDLEY FL 33166",
       "maps": "https://g.page/aafabricators?share"
+    },
+    "contactForm": {
+      "sendEmailto": "julioarhernandez@gmail.com",
+      "staticFormKey": "f18039a4-4355-412d-ac22-0cdb708fde7e",
+      "successUrl": "https://aaf-biz.netlify.app/contact/success",
+      "emailSubject": "Contact us from - AAF biz"
     }
+
 }

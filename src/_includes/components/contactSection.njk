@@ -87,10 +87,10 @@
                     </div>
                     <div class="col-12 mt-4">
                         <input type="text" name="honeypot" style="display:none">
-                        <input type="hidden" name="accessKey" value="f18039a4-4355-412d-ac22-0cdb708fde7e">
-                        <input type="hidden" name="subject" value="Contact us from - AAF biz" />
-                        <input type="hidden" name="replyTo" value="julioarhernandez@gmail.com">
-                        <input type="hidden" name="redirectTo" value="https://aaf-biz.netlify.app/contact/success">
+                        <input type="hidden" name="accessKey" value={{ global.contactForm.staticFormKey}}>
+                        <input type="hidden" name="subject" value={{ global.contactForm.emailSubject}} />
+                        <input type="hidden" name="replyTo" value={{ global.contactForm.sendEmailto}}>
+                        <input type="hidden" name="redirectTo" value={{ global.contactForm.successUrl}}>
                         <input type="submit" value="Submit" class="btn btn-primary"/>
                     </div>  
             </form>
