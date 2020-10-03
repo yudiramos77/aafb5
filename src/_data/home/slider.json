@@ -4,19 +4,29 @@
        "headerTitle": "Aluminum & Impact Glass Professionals",
        "headerContent": "We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available",
        "aside": {
-          "text": "Learn more",
+          "text": "Our products",
           "class": "btn btn-primary",
           "href": "/products/"
        }
     },
     {
        "image": "slider2",
-       "headerTitle": "Aluminum & Impact Glass Professionals",
-       "headerContent": "We offer fast turn around for Residential, Commercial & Industrial Projects. 100% Financing Available",
+       "headerTitle": "100% Financing Available for qualified buyers",
+       "headerContent": "Fast financing for a home Improvement or backyard renovation project. No Down Payments. 0 Interest for 18 Months.",
        "aside": {
-          "text": "Learn more",
+          "text": "Financing Options",
           "class": "btn btn-primary",
-          "href": "/products/"
+          "href": "/financing/"
        }
-    }
+    },
+    {
+      "image": "slider1",
+      "headerTitle": "Buy directly from Manufacturer and save Money",
+      "headerContent": "No middleman. When you buy any of our products you are buying from the factory and saving money.",
+      "aside": {
+         "text": "Financing Options",
+         "class": "btn btn-primary",
+         "href": "/financing/"
+      }
+   }
  ]
