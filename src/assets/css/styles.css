@@ -918,4 +918,19 @@ li.list-bronze:before{
   margin-right: 20px;
 }
 
+/* Contact form */
+.form-text{
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: var(--main-color-mega-lightest);
+  font-size: 14px;
+}
+.form-input{
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: var(--main-color-mega-lightest);
+  font-size: 14px;
+}
 

@@ -1,6 +1,6 @@
 <section class="contact-section mt-5">
-    <div class="container">
-        <div class="row">
+    <div class="container {% if hasForm %} d-flex flex-column{% endif %}">
+        <div class="row{% if hasForm %} order-2 mt-5{% endif %}">
             <div class="col-12 mb-5">
                 <a href="{{global.contact.maps}}" target="_blank" rel="noopener">
                     <picture>
@@ -63,5 +63,41 @@
                 </div>
             </div>
         </div>
+        {% if hasForm %}
+        <div class="row order-3">
+            <div class="col-12 text-center d-flex flex-column my-5 ">
+                <div class="content-title mt-2 order-2">
+                    <h2 class="headerTitle">{{formTitle}}</h2>
+                </div>
+                <div class="content-subtitle order-1">
+                    <h3 class="headerSubtitle -decor-vert -medium">{{formSubtitle | safe}}</h3>
+                </div>
+            </div>
+            <div class="col-10 col-md-6 text-center d-flex flex-column mb-5 mx-auto">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <input type="text" name="name" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your name*" required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <input type="text" name="email" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your e-mail*" required>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <textarea name="message" cols="40" rows="10" class="form-text" aria-required="true" aria-invalid="false" placeholder="Your message*" required></textarea>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <input type="text" name="honeypot" style="display:none">
+                        <input type="hidden" name="accessKey" value="f18039a4-4355-412d-ac22-0cdb708fde7e">
+                        <input type="hidden" name="subject" value="Contact us from - AAF biz" />
+                        <input type="hidden" name="replyTo" value="julioarhernandez@gmail.com">
+                        <input type="hidden" name="redirectTo" value="https://aaf-biz.netlify.app/contact/success">
+                        <input type="submit" value="Submit" class="btn btn-primary"/>
+                    </div>  
+            </form>
+            </div>
+            
+        </div>
+        {% endif %}
+
     </div>
 </section>
