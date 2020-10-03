@@ -213,6 +213,7 @@ body {
 
 .background-dark-gradient-main:before,
 .background-dark-gradient-9-main:before,
+.background-light-mid-gradient-main:before,
 .background-light-gradient-main:before {
   content: '';
   position: absolute;
@@ -220,6 +221,11 @@ body {
   height: 100%;
   top: 0;
   right: 0;
+}
+
+.background-light-mid-gradient-main:before {
+  background: rgb(32, 39, 119);
+  background: linear-gradient(180deg, rgba(32, 39, 119, 0.4) 38%, rgba(16, 20, 60, 1) 140%);
 }
 
 .background-dark-gradient-9-main:before {
@@ -477,7 +483,7 @@ body {
     text-decoration: underline;
 
 }
-.btn-link.-dark{ 
+.btn-link.-dark, .btn-link.-dark > a{ 
   color: var(--main-color) !important;
 }
 .btn-link.-medium{
@@ -488,6 +494,10 @@ body {
 }
 .btn.btn-second{
   color: var(--secondary-color);
+}
+.btn-np{
+  padding-top: 0;
+  padding-bottom:0;
 }
 /* Footer */
 

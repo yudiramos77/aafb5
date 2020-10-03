@@ -3,7 +3,7 @@
        "image": "synchrony.jpg",
        "text": "Synchrony Home Improvement",
        "link": {
-          "text": "Learn More",
+          "text": "Financing detail",
           "class": "btn-link",
           "href": "/financing/synchrony-home-improvement/"
        }
@@ -12,7 +12,7 @@
        "image": "hfs.jpg",
        "text": "HFS Financial",
        "link": {
-          "text": "Learn More",
+          "text": "Financing detail",
           "class": "btn-link",
           "href": "/financing/hfs-financial/"
        }
