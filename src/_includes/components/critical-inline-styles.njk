@@ -1,4 +1,32 @@
-<style>.footer-icon {
+<style>
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/oswald-v35-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v35-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Martel'), local('Martel-Regular'),
+       url('../fonts/martel-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/martel-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.footer-icon {
     width: 35px;
     height: 35px;
     display: inline-flex;
@@ -18,6 +46,9 @@ body{
 .navbar img[src$='svg'],
 .contact-section img[src$='svg'] {
     width: 20px;
+}
+.card-reset.card-blog{
+    position:relative;
 }
 
 .content-grid {

@@ -5,14 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- preconnecting -->
-    <link rel='preconnect' href='//fonts.googleapis.com' />
     <link rel='preconnect' href='//img.youtube.com' />
     <link rel='preconnect' href='//maps.gstatic.com' />
     <link rel='preconnect' href='//maps.googleapis.com' />
-    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//img.youtube.com' />
     <link rel='dns-prefetch' href='//maps.gstatic.com' />
     <link rel='dns-prefetch' href='//maps.googleapis.com' />
+    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff" as="font" type="font/woff" crossorigin>
     {% include "components/critical-inline-styles.njk" %}
 
     <title>AAF - Bizmarketing.us</title>
@@ -27,12 +33,11 @@
 
       {% include "components/footer.njk" %}
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <!--  Slick slider -->
     <link rel="stylesheet" type="text/css" href="/assets/css/slick.css"/>
@@ -67,18 +72,7 @@
     <script src="/assets/lightbox/js/lightbox.js"></script>
     <!-- End lightbox -->
     <!-- add fonts -->
-    <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Source Sans Pro:400,400italic,600,600italic,700,700italic', 'Oswald:400,400italic,500,500italic,600,600italic,700,700italic','Martel:400,700,800&display=swap' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); </script>
+   
       <script>
           ( function() {
             var youtube = document.querySelectorAll( ".youtube" );
