@@ -11,14 +11,14 @@
     <link rel='dns-prefetch' href='//img.youtube.com' />
     <link rel='dns-prefetch' href='//maps.gstatic.com' />
     <link rel='dns-prefetch' href='//maps.googleapis.com' />
-    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff" as="font" type="font/woff" crossorigin />
 
     {% include "components/critical-inline-styles.njk" %}
 
@@ -35,9 +35,7 @@
 
       {% include "components/footer.njk" %}
     <!-- Styles -->
-    <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" >
-    <link rel="preload" href="/assets/css/styles.css" as="style" onload="this.rel='stylesheet'" >
-
+    {% include "components/asyncCss.njk" %}
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
