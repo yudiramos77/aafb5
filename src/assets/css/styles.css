@@ -369,7 +369,8 @@ body {
 }
 .headerItem_figure picture,
 .headerItem_figure picture>img {
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 @media (min-width: 1024px){
   .headerItem_figure picture,
@@ -641,7 +642,7 @@ footer .listing_item:not(:last-child){
 
 /* testimonials */
 .testimonial{
-  background-image: url('/assets/images/min/slider1@2x.jpg');
+  background-image: url('/assets/images/min/testimonials@2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
