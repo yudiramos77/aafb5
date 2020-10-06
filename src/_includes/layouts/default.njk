@@ -5,26 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- preconnecting -->
-    <link rel='preconnect' href='//img.youtube.com' />
-    <link rel='preconnect' href='//maps.gstatic.com' />
-    <link rel='preconnect' href='//maps.googleapis.com' />
-    <link rel='dns-prefetch' href='//img.youtube.com' />
-    <link rel='dns-prefetch' href='//maps.gstatic.com' />
-    <link rel='dns-prefetch' href='//maps.googleapis.com' />
-    <link rel="preload" as="image" href="/assets/images/min/slider1.webp">
-    <link rel="preload" as="image" href="/assets/images/min/slider2.webp">
-    <link rel="preload" as="image" href="/assets/images/min/slider1@2x.webp">
-    <link rel="preload" as="image" href="/assets/images/min/slider2@2x.webp">
-    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/source-sans-pro-v14-latin-regular.woff" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/martel-v5-latin-regular.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-regular.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/oswald-v35-latin-500.woff" as="font" type="font/woff" crossorigin />
     {% include "components/critical-inline-styles.njk" %}
-    {% include "components/asyncCss.njk" %}
+
     <title>AAF - Bizmarketing.us</title>
     
   </head>
@@ -38,7 +20,7 @@
 
       {% include "components/footer.njk" %}
     <!-- Styles -->
-    
+      {% include "components/asyncCss.njk" %}
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
