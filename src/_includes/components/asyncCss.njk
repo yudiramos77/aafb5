@@ -1,2 +1,7 @@
-    <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+    <script>
+      function relthis(){
+        document.querySelectorAll('[data-id]').forEach(function(el){el.setAttribute('rel', 'stylesheet')});
+      }
+    </script>
+    <link rel="preload" data-id="relthis" href="/assets/css/bootstrap.min.css" as="style" onload="relthis();">
+    <link rel="preload" data-id="relthis" href="/assets/css/styles.css" as="style" onload="relthis();" >
