@@ -1,0 +1,65 @@
+---
+  layout: layouts/inner.njk
+  title: Eleventy Template title
+  permalink: permits/
+  eleventyNavigation:
+    key: Permits
+    order: 7
+---
+<section class="hero">
+    {% set ctitle= 'Permits' %}
+    {% set featureImage='/assets/images/min/slider1.jpg' %}
+    {% include "components/hero-inner.njk" %}
+</section>
+
+    <!-- Section Intro -->
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'City Requirements and Permits' %}
+    {% set subtitle='Permits' %}
+    {% set body="<p>A permit brings you the service of Plans Reviewers and Inspectors who are experts in their field. In addition to giving advice, they approve each phase of your project, checking to see that the work is done by the code and the approved plans.</p>
+<p>Permits are required for the replacement of windows and sliding glass doors, as well as screen enclosures, storage sheds, and carports of canvas or metal.</p>
+<p>There are a lot of requirements that need to be met before starting a work that needs a city permit. American Aluminum Fabricators has experience dealing with this, we specialize in commercial and residential projects. We will be your partner in the whole installation from start to finish!</p>
+<h2 class=\"headerTitle -small -dark mt-5\">You need a permit for your specific town</h2>
+<p>The first step in this process is obtaining a permit for the install. Although all towns require this as the number one step, you need to double-check with the specific application and codes unique to where your home is. Although a majority of the codes and requirements are the same, there are some differences between cities within Florida as to what is necessary for a home or structure to be considered “safe.”</p>
+<p><a href=\"#\" class=\"btn-link\" data-toggle=\"modal\" data-target=\"#cityModal\">
+  Download your City permit
+</a>
+</p>
+<h2 class=\"headerTitle -small -dark  mt-5\">Filling out an application</h2>
+<p>Once you figure out the specific permit requirements, you need to have all of the information about the work you want to have done. The information that you will need for an application includes permit type, type of property, square footage, and the reason you want the permit.</p>
+<h2 class=\"headerTitle -small -dark  mt-5\">Drop the paperwork at the Building Department</h2>
+<p>Regardless of where you live, you need to take the filled out application along with the upfront fees and submit them to the building department in your city. Most of the time this department is located and your town’s city hall building. You will go to a permit counter where you will hand in the notarized filled out and signed application and two sets of plans of the work to be reviewed.</p>
+<h2 class=\"headerTitle -small -dark  mt-5\">Get approved</h2>
+<p>The process to get your permit could take a good amount of time, especially if you are filing your application at a busy time. This is why planning ahead becomes a vital part of this process. If you plan to have your application submitted well before the hurricane season, it could make this process faster. Your application gets reviewed by a few different departments before it can get approved.</p>
+<h2 class=\"headerTitle -small -dark  mt-5\">Contact Us</h2>
+<p>We specialize in hurricane shutter installations as well as sliding glass walls, aluminum and glass doors, and custom-designed pieces. So if you’re looking for an impact window for your home, contact us today!</p>" %}
+    {% include "components/content2.njk" %}
+    <!-- end section intro -->
+
+    <!-- Modal -->
+    {% set id= 'cityModal' %}
+    {% set modalTitle= 'Download your City permit' %}
+    {% set modalContent= 'Select your city and then download the City permit clicking on the Download button' %}
+    {% include "components/modal.njk" %}
+    <!-- End modal -->
+
+    <script>
+        (function(){
+            var citySelect = document.getElementById('CityPermitSelect');
+            var buttonSubmit = document.querySelector("[data-submit='cityDownload']");
+            var formSubmit = document.querySelector("[data-form='cityDownload']");
+            citySelect.addEventListener("change", function(){
+                if (citySelect.value){
+                    formSubmit.action = '/assets/permits/' + (citySelect.value.split(' ').join('_')).toLowerCase() + '.zip';
+                    buttonSubmit.disabled =  false;
+                }else{
+                    buttonSubmit.disabled =  true;
+                }
+                
+            });
+        })();
+    </script>
+
+
+
+

@@ -592,12 +592,23 @@ body {
   padding: 14px 66px 14px 14px;
   text-align: left;
 }
+.btn:disabled{
+  background-color: darkgray;
+  border-color: darkgray;
+}
 .btn:after{
   content: '⟶';
   position: absolute;
   top: 8px;
   right: 20px;
   font-size: 20px;
+}
+.btn.btn-no-arrow{
+  text-align: center;
+  padding: 14px;
+}
+.btn.btn-no-arrow:after{
+  content: '';
 }
 .btn-primary{
   background-color: var(--secondary-color);
@@ -776,6 +787,17 @@ footer .listing_item:not(:last-child){
     left: 0;
 }
 
+/* Modal */
+.modal-header{
+  background-color: var(--main-color);
+  color: white;
+}
+.modal .close{
+  color: #ffffff;
+}
+.modal .modal-footer{
+  border-top: none;
+}
 
 
 
@@ -1077,10 +1099,11 @@ li.list-bronze:before{
   font-size: 14px;
 }
 .form-input{
-  padding: 15px;
+  padding: 0 15px;
   width: 100%;
   border: none;
   background-color: var(--main-color-mega-lightest);
   font-size: 14px;
+  min-height: 45px;
 }
 
