@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig
         .addPassthroughCopy("./src/assets/images")
+        .addPassthroughCopy("./src/favicon*")
         .addPassthroughCopy("./src/assets/css")
         .addPassthroughCopy("./src/assets/js")
         .addPassthroughCopy("./src/assets/permits")
