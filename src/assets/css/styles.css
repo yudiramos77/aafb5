@@ -1105,5 +1105,6 @@ li.list-bronze:before{
   background-color: var(--main-color-mega-lightest);
   font-size: 14px;
   min-height: 45px;
+  border-radius: 0;
 }
 

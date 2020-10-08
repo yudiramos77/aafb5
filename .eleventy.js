@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("./src/assets/css")
         .addPassthroughCopy("./src/assets/js")
         .addPassthroughCopy("./src/assets/permits")
+        .addPassthroughCopy("./src/assets/docs")
         .addPassthroughCopy("./src/assets/lightbox")
         .addPassthroughCopy("./src/admin");
 

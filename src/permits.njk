@@ -4,7 +4,7 @@
   permalink: permits/
   eleventyNavigation:
     key: Permits
-    order: 7
+    order: 5
 ---
 <section class="hero">
     {% set ctitle= 'Permits' %}
@@ -19,6 +19,85 @@
     {% set body="<p>A permit brings you the service of Plans Reviewers and Inspectors who are experts in their field. In addition to giving advice, they approve each phase of your project, checking to see that the work is done by the code and the approved plans.</p>
 <p>Permits are required for the replacement of windows and sliding glass doors, as well as screen enclosures, storage sheds, and carports of canvas or metal.</p>
 <p>There are a lot of requirements that need to be met before starting a work that needs a city permit. American Aluminum Fabricators has experience dealing with this, we specialize in commercial and residential projects. We will be your partner in the whole installation from start to finish!</p>
+
+<div class=\"styled-list\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-10 col-md-8 d-flex flex-column mx-auto\">
+
+                <h2 class=\"headerTitle -medium pb-4 -invert\">Permit processing Inquiry</h2>
+                <form action=\"https://api.staticforms.xyz/submit\" method=\"post\" class=\"-invert\">
+                    <div class=\"row\">
+                        <div class=\"col-md-6 col-12 mb-md-3\">
+                            <input type=\"text\" name=\"name\" value=\"\" class=\"form-input\" aria-required=\"true\"
+                                   aria-invalid=\"false\" placeholder=\"Your name*\" required>
+                        </div>
+                        <div class=\"col-md-6 col-12 mt-4 mt-md-0 mb-md-3\">
+                            <input type=\"text\" name=\"$lastname\" value=\"\" class=\"form-input\" aria-required=\"true\"
+                                   aria-invalid=\"false\" placeholder=\"Last Name*\" required>
+                        </div>
+                        <div class=\"col-12 col-md-6 mt-4 mt-md-0 mb-md-3\">
+                            <input type=\"text\" name=\"email\" value=\"\" class=\"form-input\" aria-required=\"true\"
+                                   aria-invalid=\"false\" placeholder=\"Your e-mail*\" required>
+                        </div>
+                        <div class=\"col-12 col-md-6 mt-4 mt-md-0 mb-md-3\">
+                            <select class=\"form-control form-input\" name=\"$city\">
+                                <option value=\"\">Select your city </option>
+                                <option value=\"Aventura\">Aventura </option>
+                                <option value=\"Coconut Grove\">Coconut Grove</option>
+                                <option value=\"Coral Gables\">Coral Gables </option>
+                                <option value=\"Cutler Bay\">Cutler Bay</option>
+                                <option value=\"Doral\">Doral</option>
+                                <option value=\"Hialeah\">Hialeah</option>
+                                <option value=\"Hialeah Gardens\">Hialeah Gardens </option>
+                                <option value=\"Homestead\">Homestead </option>
+                                <option value=\"Kendall\">Kendall</option>
+                                <option value=\"Key Biscayne\">Key Biscayne </option>
+                                <option value=\"Medley\">Medley </option>
+                                <option value=\"Miami Beach\">Miami Beach</option>
+                                <option value=\"Miami Dade\">Miami Dade </option>
+                                <option value=\"Miami Gardens\">Miami Gardens </option>
+                                <option value=\"Miami Lakes\">Miami Lakes </option>
+                                <option value=\"Miami Shores\">Miami Shores </option>
+                                <option value=\"Miami Springs\">Miami Springs </option>
+                                <option value=\"North Miami\">North Miami</option>
+                                <option value=\"North Miami Beach\">North Miami Beach </option>
+                                <option value=\"Palmetto Bay\">Palmetto Bay </option>
+                                <option value=\"Pinecrest\">Pinecrest </option>
+                                <option value=\"Sweetwater\">Sweetwater </option>
+                            </select>
+                        </div>
+                        <div class=\"col-12 col-md-6 mt-4 mt-md-0\">
+                            <div class=\"form-check\">
+                                <input type=\"checkbox\" class=\"form-check-input\" id=\"city-check\" name=\"$City/Municipality Processing\">
+                                <label class=\"form-check-label\" for=\"city-check\">City/Municipality Processing</label>
+                            </div>
+                            <div class=\"form-check\">
+                                <input type=\"checkbox\" class=\"form-check-input\" id=\"hoa-check\" name=\"$HOA Processing\">
+                                <label class=\"form-check-label\" for=\"hoa-check\">HOA Processing</label>
+                            </div>
+                        </div>
+                        <div class=\"col-12 mt-4\">
+                            <strong>If you don't see your city or municipality on the list please write it down below as well as any questions you might have.</strong>
+                            <textarea name=\"message\" maxlenght=\"400\" cols=\"40\" rows=\"10\" class=\"form-text mt-2\" aria-required=\"true\"
+                                      aria-invalid=\"false\" placeholder=\"Your message*\" required></textarea>
+                        </div>
+                        <div class=\"col-12 mt-4\">
+                            <input type=\"text\" name=\"honeypot\" style=\"display:none\">
+                            <input type=\"hidden\" name=\"accessKey\" value=\"" + global.contactForm.staticFormKey + "\"/>
+                            <input type=\"hidden\" name=\"subject\" value=\"" + global.contactForm.emailSubject +"\"/>
+                            <input type=\"hidden\" name=\"replyTo\" value=\"" + global.contactForm.sendEmailto+"\"/>
+                            <input type=\"hidden\" name=\"redirectTo\" value=\"" + global.contactForm.successUrl+"\"/>
+                            <input type=\"submit\" value=\"Submit\" class=\"btn btn-primary btn-no-arrow\"/>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2 class=\"headerTitle -small -dark mt-5\">You need a permit for your specific town</h2>
 <p>The first step in this process is obtaining a permit for the install. Although all towns require this as the number one step, you need to double-check with the specific application and codes unique to where your home is. Although a majority of the codes and requirements are the same, there are some differences between cities within Florida as to what is necessary for a home or structure to be considered “safe.”</p>
 <p><a href=\"#\" class=\"btn-link\" data-toggle=\"modal\" data-target=\"#cityModal\">
@@ -32,9 +111,37 @@
 <h2 class=\"headerTitle -small -dark  mt-5\">Get approved</h2>
 <p>The process to get your permit could take a good amount of time, especially if you are filing your application at a busy time. This is why planning ahead becomes a vital part of this process. If you plan to have your application submitted well before the hurricane season, it could make this process faster. Your application gets reviewed by a few different departments before it can get approved.</p>
 <h2 class=\"headerTitle -small -dark  mt-5\">Contact Us</h2>
-<p>We specialize in hurricane shutter installations as well as sliding glass walls, aluminum and glass doors, and custom-designed pieces. So if you’re looking for an impact window for your home, contact us today!</p>" %}
+<p>We specialize in hurricane shutter installations as well as sliding glass walls, aluminum and glass doors, and custom-designed pieces. So if you’re looking for any of these improvements for your home, contact us today!</p>
+<h2 class=\"headerTitle -small -dark  mt-5\">Average Cost of Building permits in Miami-Dade & Broward</h2>
+<p>Building permits can be tricky to price because it depends entirely on which types you need for your project. Below is the average costs you can expect.</p>
+
+<p><strong>PERMIT PROCESS</strong></p>
+<p>Flat Fee of $1,200</p>
+<p>Additional Fees $_______ <em>(To be determined based on specific city requirements)</em></p>
+<p>Total Process Varies by client</p>
+<p><strong>PROCESO DE PERMISOS</strong></p>
+<p>Tarifa $1,200</p>
+<p>Cuota Adicionales $________ <em>(dependiente de los requerimientos de la ciudad)</em></p>
+<p>Total del proceso varia por cliente</p>
+<p><strong>PERMIT FEE CHECKLIST&nbsp;</strong></p>
+<p>Contractor Fee $400</p>
+<p>Building Permit Application <em>(Building Dpt. Commute/Processing/Intake/Finalization) </em>$230</p>
+<p>Notarization $10 per page</p>
+<p>(2) Wind Load Calculation Forms $100</p>
+<p>(2) Sketches showing the locations of the shutters $100</p>
+<p>Liability Insurance (Provided by American Aluminum Fabricators Corp.) $200</p>
+<p>Notice of Commencement (Provided by American Aluminum Fabricators Corp.)</p>
+<p>Survey of home (Provided by Client)</p>
+<p>Permit Processing Time and Transportation Fees $160</p>
+<p>** Please note that this checklist is not intended to be all-inclusive. Due to changes in codes, regulations, and ordinances, other requirements may apply.</p>
+<p>****Permits can anywhere from 30-60 days to process and get approved.</p>
+<p><em>2018 Building Permit Cost Statistics</em></p>
+<p><em>The national average cost of a building permit is $1,043, with most homeowners spending between $400 and $1,687. This data is based on actual project costs according to HomeAdvisor members. Depending on the area, they may be required for additions, renovations and even electrical or plumbing projects.</em></p>
+" %}
     {% include "components/content2.njk" %}
     <!-- end section intro -->
+
+{#    {% include "components/permit-form.njk" %}#}
 
     <!-- Modal -->
     {% set id= 'cityModal' %}

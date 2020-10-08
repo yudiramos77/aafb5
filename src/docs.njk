@@ -1,0 +1,40 @@
+---
+  layout: layouts/inner.njk
+  title: Eleventy Template title
+  permalink: docs/
+  eleventyNavigation:
+    key: Docs
+    order: 6
+---
+<section class="hero">
+    {% set ctitle= 'Important Documents' %}
+    {% set featureImage='/assets/images/min/slider1.jpg' %}
+    {% include "components/hero-inner.njk" %}
+</section>
+
+    <!-- Section Intro -->
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'Important Documents' %}
+    {% set subtitle='Docs' %}
+    {% set body="<p>Next you will find important documentation you may need for your home improvement project. Contact our offices if you need guidance or clarification regarding any legal term or dispute.</p>
+    <ul class=\"mt-4\"></ul>
+    <li class=\"btn-link -dark text-decoration-none mb-3\">
+        <a href=\"/assets/docs/general_terms_and_conditions.pdf\" title=\"general terms and conditions\">general terms and conditions</a>
+    </li>
+    <li class=\"btn-link -dark text-decoration-none mb-3\">
+        <a href=\"/assets/docs/home_improvement_contract.pdf\" title=\"home improvement contract\">home improvement contract</a>
+    </li>
+    <li class=\"btn-link -dark text-decoration-none mb-3\">
+        <a href=\"/assets/docs/impact_resistant_glass_terms_and_conditions.pdf\" title=\"impact resistant glass terms and conditions\">impact resistant glass terms and conditions</a>
+    </li>
+    <li class=\"btn-link -dark text-decoration-none mb-3\">
+        <a href=\"/assets/docs/refund_policy.pdf\" title=\"refund policy\">refund policy</a>
+    </li>
+</ul>" %}
+    {% include "components/content2.njk" %}
+    <!-- end section intro -->
+
+
+
+
+

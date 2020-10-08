@@ -1,0 +1,77 @@
+<div class="styled-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-8 d-flex flex-column mx-auto">
+
+                <h2 class="headerTitle -medium pb-4 -invert">Permit processing Inquiry</h2>
+                <form action="https://api.staticforms.xyz/submit" method="post" class="-invert">
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-md-3">
+                            <input type="text" name="name" value="" class="form-input" aria-required="true"
+                                   aria-invalid="false" placeholder="Your name*" required>
+                        </div>
+                        <div class="col-md-6 col-12 mt-4 mt-md-0 mb-md-3">
+                            <input type="text" name="lastname" value="" class="form-input" aria-required="true"
+                                   aria-invalid="false" placeholder="Last Name*" required>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 mb-md-3">
+                            <input type="text" name="email" value="" class="form-input" aria-required="true"
+                                   aria-invalid="false" placeholder="Your e-mail*" required>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 mb-md-3">
+                            <select class="form-control form-input" name="city">
+                                <option value="">Select your city </option>
+                                <option value="Aventura">Aventura </option>
+                                <option value="Coconut Grove">Coconut Grove</option>
+                                <option value="Coral Gables">Coral Gables </option>
+                                <option value="Cutler Bay">Cutler Bay</option>
+                                <option value="Doral">Doral</option>
+                                <option value="Hialeah">Hialeah</option>
+                                <option value="Hialeah Gardens">Hialeah Gardens </option>
+                                <option value="Homestead">Homestead </option>
+                                <option value="Kendall">Kendall</option>
+                                <option value="Key Biscayne">Key Biscayne </option>
+                                <option value="Medley">Medley </option>
+                                <option value="Miami Beach">Miami Beach</option>
+                                <option value="Miami Dade">Miami Dade </option>
+                                <option value="Miami Gardens">Miami Gardens </option>
+                                <option value="Miami Lakes">Miami Lakes </option>
+                                <option value="Miami Shores">Miami Shores </option>
+                                <option value="Miami Springs">Miami Springs </option>
+                                <option value="North Miami">North Miami</option>
+                                <option value="North Miami Beach">North Miami Beach </option>
+                                <option value="Palmetto Bay">Palmetto Bay </option>
+                                <option value="Pinecrest">Pinecrest </option>
+                                <option value="Sweetwater">Sweetwater </option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="city-check">
+                                <label class="form-check-label" for="city-check">City/Municipality Processing</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="hoa-check">
+                                <label class="form-check-label" for="hoa-check">HOA Processing</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <strong>If you don't see your city or municipality on the list please write it down below as well as any questions you might have.</strong>
+                            <textarea name="message" maxlength="400" cols="40" rows="10" class="form-text mt-2" aria-required="true"
+                                      aria-invalid="false" placeholder="Your message*" required></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <input type="text" name="honeypot" style="display:none">
+                            <input type="hidden" name="accessKey" value={{ global.contactForm.staticFormKey }}>
+                            <input type="hidden" name="subject" value={{ global.contactForm.emailSubject }}/>
+                            <input type="hidden" name="replyTo" value={{ global.contactForm.sendEmailto }}>
+                            <input type="hidden" name="redirectTo" value={{ global.contactForm.successUrl }}>
+                            <input type="submit" value="Submit" class="btn btn-primary btn-no-arrow"/>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

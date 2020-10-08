@@ -20,7 +20,7 @@
                     <h1 class="headerTitle">{{ctitle}}</h1>
                 </div>
                 <div class="content-subtitle order-1">
-                    <h2 class="headerSubtitle -decor-vert -medium">{{subtitle | safe}}</h1>
+                    <h2 class="headerSubtitle -decor-vert -medium">{{subtitle | safe}}</h2>
                 </div>
             </div>
         </div>
@@ -75,25 +75,26 @@
             </div>
             <div class="col-10 col-md-6 text-center d-flex flex-column mb-5 mx-auto">
                 <form action="https://api.staticforms.xyz/submit" method="post">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <input type="text" name="name" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your name*" required>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="name" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your name*" required>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <input type="text" name="email" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your e-mail*" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <textarea name="message" cols="40" rows="10" class="form-text" aria-required="true" aria-invalid="false" placeholder="Your message*" required></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <input type="text" name="honeypot" style="display:none">
+                            <input type="hidden" name="accessKey" value={{ global.contactForm.staticFormKey}}>
+                            <input type="hidden" name="subject" value={{ global.contactForm.emailSubject}} />
+                            <input type="hidden" name="replyTo" value={{ global.contactForm.sendEmailto}}>
+                            <input type="hidden" name="redirectTo" value={{ global.contactForm.successUrl}}>
+                            <input type="submit" value="Submit" class="btn btn-primary btn-no-arrow"/>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 mt-4 mt-md-0">
-                        <input type="text" name="email" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your e-mail*" required>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <textarea name="message" cols="40" rows="10" class="form-text" aria-required="true" aria-invalid="false" placeholder="Your message*" required></textarea>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <input type="text" name="honeypot" style="display:none">
-                        <input type="hidden" name="accessKey" value={{ global.contactForm.staticFormKey}}>
-                        <input type="hidden" name="subject" value={{ global.contactForm.emailSubject}} />
-                        <input type="hidden" name="replyTo" value={{ global.contactForm.sendEmailto}}>
-                        <input type="hidden" name="redirectTo" value={{ global.contactForm.successUrl}}>
-                        <input type="submit" value="Submit" class="btn btn-primary btn-no-arrow"/>
-                    </div>  
-            </form>
+                </form>
             </div>
             
         </div>
