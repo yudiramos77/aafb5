@@ -55,7 +55,7 @@ body{
 }
 
 .content-grid {
-    min-height(430px);
+    min-height: 430px;
 }
 
 .navbar {
@@ -400,13 +400,6 @@ button {
     }
 }
 
-/*! CSS Used from: http://localhost:8080/assets/css/bootstrap.min.css */
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
 section {
     display: block;
 }
@@ -430,10 +423,6 @@ a:hover {
 img {
     vertical-align: middle;
     border-style: none;
-}
-
-[role=button] {
-    cursor: pointer;
 }
 
 .container {
@@ -483,6 +472,11 @@ img {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+.col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
 }
 
 @media (min-width:768px) {
@@ -587,16 +581,6 @@ img {
     transition: opacity .15s ease;
 }
 
-.carousel-control-next:focus,
-.carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-prev:hover {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-}
-
 .carousel-control-prev {
     left: 0;
 }
@@ -687,28 +671,6 @@ img {
 
 .mx-auto {
     margin-left: auto !important;
-}
-
-@media print {
-
-    *,
-    ::after,
-    ::before {
-        text-shadow: none !important;
-        box-shadow: none !important;
-    }
-
-    a:not(.btn) {
-        text-decoration: underline;
-    }
-
-    img {
-        page-break-inside: avoid;
-    }
-
-    .container {
-        min-width: 992px !important;
-    }
 }
 
 .headerTitle {

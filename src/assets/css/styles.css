@@ -476,7 +476,7 @@ body {
   }
 }
 .headerItem_wrapper{
-  padding: 40px 40px 70px;
+  padding: 0 40px 70px;
 }
 .header-inner .headerItem_wrapper{
   padding: 85px 20px;
@@ -511,6 +511,7 @@ body {
 .headerItem_figure picture>img {
   height: auto;
   width: 100%;
+  min-height: 360px;
 }
 @media (min-width: 1024px){
   .headerItem_figure picture,
