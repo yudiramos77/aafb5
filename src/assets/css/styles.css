@@ -616,6 +616,12 @@ body {
   letter-spacing: 2px;
   line-height: 1;
 }
+.btn-ellipsis{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 .btn-transparent{
   padding-left: 0;
@@ -639,6 +645,9 @@ body {
 }
 .btn-link.-medium{
   font-size: 1rem;
+}
+.btn-link.-large{
+  font-size: 1.2rem;
 }
 .btn-link.btn-no-underline{ 
   text-decoration: none;
@@ -683,6 +692,7 @@ footer .listing_item:not(:last-child){
 }
 .logo-footer{
   width: 120px;
+  height: 100%;
 }
 @media (max-width: 767.98px){
   .d-block-small{

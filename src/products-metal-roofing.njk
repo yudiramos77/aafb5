@@ -3,19 +3,20 @@
   title: Eleventy Template title
   permalink: products/metal-roofing/
   eleventyNavigation:
-    key: Metal Roofing
+    key: Insulated Metal Roofing
     parent: Products
+    order: 2
 ---
 <section class="hero">
-    {% set ctitle= 'Metal Roofing' %}
-    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Metal Roofing") %}
+    {% set ctitle= 'Insulated Metal Roofing' %}
+    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Insulated Metal Roofing") %}
     {% set breadcrumbs=navPages %}
     {% set featureImage='/assets/images/min/slider1.jpg' %}
     {% include "components/hero-inner.njk" %}
 </section>
     <!-- Section Intro -->
     {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
-    {% set ctitle= 'Metal Roofing' %}
+    {% set ctitle= 'Insulated Metal Roofing' %}
     {% set subtitle='Products' %}
     {% set body=products.content.roofing.content %}
     {% include "components/content2.njk" %}  

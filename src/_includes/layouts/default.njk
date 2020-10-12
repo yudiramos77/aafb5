@@ -76,7 +76,17 @@
             })
         }
 
+         function normalizeEllipsisLinks(){
+          let emailLink = $('.btn-ellipsis');
+          if (emailLink.length){
+              let parentElement = $(emailLink).parent();
+              let parentWidth = parentElement.width();
+              $(emailLink).css('width', parentWidth);
+          }
+        };
+
         $(window).on( 'load resize orientationchange', normalizeSlideHeights);
+        $(window).on( 'load resize orientationchange', normalizeEllipsisLinks);
 
       </script>
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

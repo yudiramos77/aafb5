@@ -17,7 +17,7 @@
                             {{headerTitle}}
                         </div>
                         <div class="bodyContent{% if invert %} -invert{% endif %}">
-                            {{ headerContent }}
+                            {{ headerContent | safe}}
                         </div>
                         {% if aside %}
                         <div class="asideButton">
