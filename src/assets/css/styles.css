@@ -734,10 +734,19 @@ footer .listing_item:not(:last-child){
 
 /* Why us */
 .whyus{
-  background-image: url('/assets/images/min/slider2@2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 767.98px){
+  .whyus{
+  background-image: url('/assets/images/min/whyus-500.webp');
+  }
+}
+@media (min-width: 768px){
+  .whyus{
+    background-image: url('/assets/images/min/whyus.webp');
+  }
 }
 
 .whyus .wrapper {
