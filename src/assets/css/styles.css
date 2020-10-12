@@ -739,12 +739,12 @@ footer .listing_item:not(:last-child){
   background-size: cover;
 }
 @media (max-width: 767.98px){
-  .whyus{
+  .whyus.lazy-background.visible-image{
   background-image: url('/assets/images/min/whyus-500.webp');
   }
 }
 @media (min-width: 768px){
-  .whyus{
+  .whyus.lazy-background.visible-image{
     background-image: url('/assets/images/min/whyus.webp');
   }
 }
@@ -823,7 +823,6 @@ footer .listing_item:not(:last-child){
 
 /* testimonials */
 .testimonial{
-  background-image: url('/assets/images/min/testimonials@2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -831,6 +830,16 @@ footer .listing_item:not(:last-child){
 @media (max-width: 767.98px){
   .testimonial >.container >.row{
     margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px){
+  .testimonial.lazy-background.visible-image{
+  background-image: url('/assets/images/min/testimonials-500.webp');
+  }
+}
+@media (min-width: 768px){
+  .testimonial.lazy-background.visible-image{
+    background-image: url('/assets/images/min/testimonials.webp');
   }
 }
 
