@@ -432,9 +432,10 @@ body {
   }
   @media (max-width: 991.9px){
     .navbar .navbar-collapse{
-      height: 100vh;
+      max-height: calc(100vh - 138px);
       padding-top: 25px;
       text-align: center;
+      overflow-y: auto;
     }
     /* .navbar .collapsing {
         -webkit-transition: none !important;
