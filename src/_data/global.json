@@ -16,7 +16,7 @@
     "contactForm": {
       "sendEmailto": "info@americanaluminumfabricators.com",
       "staticFormKey": "c82c917f-e290-4053-9458-b31149857be3",
-      "successUrl": "https://aaf-biz.netlify.app/contact/success",
+      "successUrl": "https://www.americanaluminumfabricators/success/",
       "emailSubject": "Contact from - American Aluminum Fabricators"
     }
 

@@ -1,0 +1,65 @@
+---
+  layout: layouts/message.njk
+  title: Your contact information has been submitted
+  permalink: success/
+---
+<div class="container">
+  <div class="col">
+    <div class="message">
+      <div class="message-logo">
+        <img src="/assets/images/logo-header-aaf.png" class="logo-header">
+      </div>
+      <div class="message-content">
+        <h1 class="headerTitle">Contact Successfully</h1>
+        <div class="bodyContent">Your message/contact information has been submitted. </div>
+        <a href="#" onclick="goBack()" class="btn btn-primary btn-no-arrow">Go back</a>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<style>
+  .message{
+    height: 100vh;
+    margin: 0 auto;
+    width: 275px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .message-logo{
+    margin-bottom: 2rem;
+  }
+  .message-content{
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    padding: 30px;
+  }
+  .headerTitle{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .bodyContent{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .btn{
+    background-color: #FFDD00;
+  }
+  .btn.btn-no-arrow{
+  text-align: center;
+  padding: 14px;
+}
+.btn.btn-no-arrow:after{
+  content: '';
+}
+</style>
