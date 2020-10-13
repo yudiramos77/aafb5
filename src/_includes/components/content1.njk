@@ -19,18 +19,18 @@
             </div>
             <div class="{{class}} section-content1 mt-5">
                 <div class="content-title mt-2 order-2">
-                    <h1 class="headerTitle">{{ctitle}}</h1>
+                    <{{titleHtag}} class="headerTitle">{{ctitle}}</{{titleHtag}}>
                 </div>
                 <div class="content-subtitle order-1">
-                    <h2 class="headerSubtitle -decor-hoz -medium">{{subtitle}}</h1>
+                    <{{subtitleHtag}} class="headerSubtitle -decor-hoz -medium">{{subtitle}}</{{subtitleHtag}}>
                 </div>
                 {% if subsubtitle %}
                 <div class="content-subsubtitle order-3">
-                    <span class="headerSubsubtitle">{{subsubtitle}}</h1>
+                    <span class="headerSubsubtitle">{{subsubtitle}}</span>
                 </div>
                 {% endif %}
                 <div class="content-body order-3 mt-4">
-                    <div class="bodyContent">{{body | safe }}</h1>
+                    <div class="bodyContent">{{body | safe }}</div>
                         {% include "components/button.njk" %}
                     </div>
                 </div>

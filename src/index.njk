@@ -1,6 +1,6 @@
 ---
   layout: layouts/default.njk
-  title: Eleventy Template title
+  title: Aluminum and Impact glass experts in Miami
   eleventyNavigation:
     key: Home
     order: 0
@@ -14,6 +14,8 @@
     <!-- Section Intro -->
     {% set class='col-10 col-md-5 d-flex flex-column mx-auto' %}
     {% set ctitle= 'Aluminum & Impact Glass Experts' %}
+    {% set titleHtag= 'h1' %}
+    {% set subtitleHtag= 'h2' %}
     {% set subtitle='American Aluminum Fabricators' %}
     {% set body='<p class="mb-5">American Aluminum Fabricators Corp. provides you with exceptional service and high quality products to achieve your home improvement project. We take your idea and make it a reality whether for your home or business. We provide quality Accordion Hurricane Shutters, High Impact Windows and Doors, Metal Roofing, Insulated Panels, Railings and Decks, Patio Screens, and Rain Gutters.</p><p><a href="/products/" class="btn btn-primary">check our products</a></p>' %}
     {% include "components/content1.njk" %}  
@@ -22,6 +24,8 @@
     <!-- Section Products -->
     {% set products= products.items %}
     {% set ctitle= 'Explore our Aluminum and Glass Products' %}
+    {% set titleHtag= 'h2' %}
+    {% set subtitleHtag= 'h3' %}
     {% set subtitle='Our Products' %}
     {% set class='back-main-light pt-6' %}
     {% include "components/cardsSection.njk" %}
@@ -31,6 +35,8 @@
     {% set ctitle= '“ Excellent Quality & Durable Products! ”' %}
     {% set subtitle='Why Choose our products' %}
     {% set class='back-main-light pt-6' %}
+    {% set titleHtag = 'h3' %}
+    {% set subtitleHtag = 'h2' %}
     {% include "components/whyus.njk" %}
     <!-- End section whyus -->
 
@@ -50,6 +56,8 @@
     {% set ctitle= 'Lastest Articles' %}
     {% set subtitle='Our blogs' %}
     {% set class='mt-5 back-main-light pt-6 py-6' %}
+    {% set titleHtag = 'h2' %}
+    {% set subtitleHtag = 'p' %}
     {% include "components/blogItem.njk" %}
     <!-- End section blogs -->
 
