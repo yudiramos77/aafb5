@@ -8,7 +8,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <!-- preconnecting -->
     {% include "components/critical-inline-styles.njk" %}
-
+    {%- if ldjson %}
+    <script type="application/ld+json">
+    {{ ldjson | dump(2) | safe }}
+    </script>
+    {%-  endif  %}
     <title>AAF - Bizmarketing.us</title>
     
   </head>

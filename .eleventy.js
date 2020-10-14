@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const cleanCss = require("clean-css");
 
 module.exports = function (eleventyConfig) {    
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -11,7 +12,6 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("./src/assets/docs")
         .addPassthroughCopy("./src/assets/lightbox")
         .addPassthroughCopy("./src/admin");
-
     eleventyConfig.addLayoutAlias("posts", "layouts/posts.njk");
     eleventyConfig.addFilter('dump', obj => {
         const getCircularReplacer = () => {
@@ -28,7 +28,10 @@ module.exports = function (eleventyConfig) {
         };
         
         return JSON.stringify(obj, getCircularReplacer(), 4);
-        });
+    });
+    eleventyConfig.addFilter("cssmin", function(code) {
+        return new cleanCss({}).minify(code).styles;
+    });
 
     return {
         passthroughFileCopy: true,
