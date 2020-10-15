@@ -6,7 +6,7 @@ sitemapIgnore: true
 <?xml-stylesheet type="text/xsl" href="/assets/styles/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {%- for item in collections.all %}
-        {%- if item.data.sitemapIgnore !== true %}
+        {%- if item.data.sitemapIgnore !== true and item.url !== '/admin/' %}
             <url>
                 <loc>{{ global.domain }}{{ item.url }}</loc>
                 <lastmod>{{ item.date.toISOString() }}</lastmod>

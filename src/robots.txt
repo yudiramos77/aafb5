@@ -1,0 +1,10 @@
+# Block only Googlebot
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /cdn-cgi/
+
+# All other
+User-agent: *
+Allow: /
+
+Sitemap: https://www.americanaluminumfabricators.com/sitemap.xml
