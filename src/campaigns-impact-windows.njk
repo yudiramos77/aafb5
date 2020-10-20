@@ -1,34 +1,10 @@
 ---json
     {
       "layout": "layouts/campaigns.njk",
-      "title": "Hurricane accordion shutters",
+      "title": "Impact Windows and Doors for Residencials and Commercial Clients in Miami",
       "permalink": "campaigns/impact-windows-and-doors/",
       "description": "Impact windows and doors are the best solution to secure your home or business, It can withstand blows from flying debris reducing the chance of an impact fracture offering a lifetime security and protection.",
-      "sitemapIgnore": "true",
-      "ldjson": {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.americanaluminumfabricators.com/products/accordion-hurricane-shutters/"
-          },
-          "headline": "What are impact windows?",
-          "description": "Accordion shutters are one or two-piece panels that collapse and fold like an accordion and glide on wheels. They are constructed of heavy-gauge, extruded aluminum or steel panels that effectively block strong winds and direct sunlight. These shutters are housed beside the windows or doors when not in use and unfold to protect during a storm. Accordion shutters are permanently installed. They require a roller-carriage system track, which they slide open and closed on. Some models can be locked with a key to reducing the chance of theft",
-          "image": "https://www.americanaluminumfabricators.com/assets/images/min/accordion-shutter-3.jpg",
-          "author": {
-            "@type": "Organization",
-            "name": "American Aluminum Fabricators"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "American Aluminum Fabricators",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.americanaluminumfabricators.com/assets/images/logo-header-aaf.png"
-            }
-          },
-          "datePublished": "2020-10-13"
-      }
+      "sitemapIgnore": "true"
 }
 ---
 <section class="hero">
@@ -83,6 +59,23 @@
 
     <!-- Testimonial -->
     {% include "components/testimonial.njk" %}
+
+    <!-- Event snippet for Submit lead form conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-782290617/Xmc6CMvWsuMBELmdg_UC',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
 
 
