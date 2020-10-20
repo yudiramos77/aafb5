@@ -1,14 +1,14 @@
-<div class="background-dark-gradient-main">
+<div class="background-light-gradient-main">
     <div class="headerItem header-inner">
         <div class="headerItem_figure">
              <picture>
                 <source srcset="{{featureImage}}" media="(max-width:500px)">
-                <source srcset="{{featureImage}}" media="(min-width:501px)">
+                <source srcset="{{featureImage2x}}" media="(min-width:501px)">
                 <img src="{{featureImage}}" alt="..." loading="lazy">
             </picture>
         </div>
         <div class="headerItem_content">
-            <div class="container my-5">
+            <div class="container my-5" id="estimateForm">
                 <div class="row">
                     <div class="col-10 mx-auto col-md-5 align-self-center mb-5 mb-md-0">
                         <div class="headerTitle mb-3 -invert">
@@ -25,7 +25,7 @@
                                 <div class="cta-box bg-white">
                                     <div class="d-flex flex-column p-5 text-center">
                                         <div class="content-title mt-2 order-2">
-                                            <h2 class="headerTitle">{{formSubtitle}}</h2>
+                                            <h2 class="headerTitle">{{formSubtitle | safe}}</h2>
                                         </div>
                                         <div class="content-subtitle order-1">
                                             <h3 class="headerSubtitle">{{formTitle}}</h3>

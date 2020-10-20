@@ -32,11 +32,12 @@
 }
 ---
 <section class="hero">
-    {% set ctitle= 'Impact Windows and Doors for Residencial or Commercial clients' %}
+    {% set ctitle= 'Impact Windows and Doors for Residencial and Commercial clients' %}
     {% set formTitle= 'Get in touch' %}
     {% set content='Protecting your family and property with the highest quality products at the most competitive prices.'%}
-    {% set formSubtitle='Free estimates!' %}
-    {% set featureImage='/assets/images/min/slider1.jpg' %}
+    {% set formSubtitle='Contact us to get a <br/> FREE ESTIMATE!' %}
+    {% set featureImage='/assets/images/min/impact-windows-doors-camp.jpg' %}
+    {% set featureImage2x='/assets/images/min/impact-windows-doors-camp@2x.jpg' %}
     {% include "components/hero-inner-campaign.njk" %}
 </section>
    <!-- Section Intro -->
@@ -57,7 +58,6 @@
       { "src": "/assets/images/min/impact-windows-and-doors-6.jpg"},
       { "src": "/assets/images/min/impact-windows-and-doors-7.jpg"}
     ] %}
-
     {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
     {% set ctitle= 'Impact Window & Door Models' %}
     {% set slides=items %}
@@ -65,10 +65,18 @@
     {% include "components/simple-carousel.njk" %}
     <!-- end section simple products -->
 
+    <div class="container">
+        <div class="col-12">
+            <p class="my-5 text-center">
+                <a href="#estimateForm" class="btn btn-no-arrow btn-primary">Get in touch with us</a>
+            </p>
+        </div>
+    </div>
+
     <!-- Section product gallery -->
     {% set class='back-main-light mx-auto mt-4 py-5' %}
-    {% set ctitle= 'Product Gallery' %}
-    {% set subtitle='Products' %}
+    {% set ctitle= 'Impact Windows and Doors Gallery' %}
+    {% set subtitle='Gallery' %}
     {% set gallery=products.impact.image %}
     {% include "components/gallery.njk" %}
     <!-- End Section product gallery -->
