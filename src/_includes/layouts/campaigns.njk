@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- preconnecting -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    {% include "components/metas.njk" %}
+    {% include "components/critical-inline-styles.njk" %}
+    {%- if ldjson %}
+    <script type="application/ld+json">
+    {{ ldjson | dump(2) | safe }}
+    </script>
+    {%-  endif  %}
+    <title>{{title}}</title>
+  </head>
+  <body>
+    
+      {% include "components/navbar-simplified.njk" %}
+    
+      {%- block content %}
+          {{ content | safe }}
+      {%- endblock %}
+
+      {% include "components/footer-simple.njk" %}
+    <!-- Styles -->
+    {% include "components/asyncCss.njk" %}
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!--  Slick slider -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick-theme.css"/>
+    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.gallery').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+    <!-- end slick slider -->
+    <!-- Lightbox -->
+    <link href="/assets/lightbox/css/lightbox.css" rel="stylesheet" />
+    <script src="/assets/lightbox/js/lightbox.js"></script>
+    <!-- End lightbox -->
+    <!-- add fonts -->
+
+      <script>
+        function normalizeSlideHeights() {
+          $('.carousel[data-js="normalize-height"]').each(function(){
+              var items = $('.carousel-item', this);
+              // reset the height
+              items.css('min-height', 0);
+              // set the height
+              var maxHeight = Math.max.apply(null, 
+                  items.map(function(){
+                      return $(this).outerHeight()}).get() );
+              items.css('min-height', maxHeight + 'px');
+            })
+        }
+
+        $(window).on( 'load resize orientationchange', normalizeSlideHeights);
+
+        /* lazy image backgrounds adds visible to divs */
+        document.addEventListener("DOMContentLoaded", function() {
+          var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+          if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+            let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible-image");
+                  lazyBackgroundObserver.unobserve(entry.target);
+                }
+              });
+            });
+
+            lazyBackgrounds.forEach(function(lazyBackground) {
+              lazyBackgroundObserver.observe(lazyBackground);
+            });
+          }
+        });
+        
+      </script>
+  </body>
+</html>

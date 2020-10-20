@@ -1,0 +1,82 @@
+---json
+    {
+      "layout": "layouts/campaigns.njk",
+      "title": "Hurricane accordion shutters",
+      "permalink": "campaigns/impact-windows-and-doors/",
+      "sitemapIgnore": "true",
+      "ldjson": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.americanaluminumfabricators.com/products/accordion-hurricane-shutters/"
+          },
+          "headline": "What are impact windows?",
+          "description": "Accordion shutters are one or two-piece panels that collapse and fold like an accordion and glide on wheels. They are constructed of heavy-gauge, extruded aluminum or steel panels that effectively block strong winds and direct sunlight. These shutters are housed beside the windows or doors when not in use and unfold to protect during a storm. Accordion shutters are permanently installed. They require a roller-carriage system track, which they slide open and closed on. Some models can be locked with a key to reducing the chance of theft",
+          "image": "https://www.americanaluminumfabricators.com/assets/images/min/accordion-shutter-3.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "American Aluminum Fabricators"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "American Aluminum Fabricators",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.americanaluminumfabricators.com/assets/images/logo-header-aaf.png"
+            }
+          },
+          "datePublished": "2020-10-13"
+      }
+}
+---
+<section class="hero">
+    {% set ctitle= 'Impact Windows and Doors for Residencial or Commercial clients' %}
+    {% set formTitle= 'Get in touch' %}
+    {% set content='Protecting your family and property with the highest quality products at the most competitive prices.'%}
+    {% set formSubtitle='Free estimates!' %}
+    {% set featureImage='/assets/images/min/slider1.jpg' %}
+    {% include "components/hero-inner-campaign.njk" %}
+</section>
+   <!-- Section Intro -->
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'Impact Windows and Doors' %}
+    {% set subtitle='Products' %}
+    {% set body=products.content.impactCampaign.content %}
+    {% include "components/content2.njk" %}
+    <!-- end section intro -->
+
+    <!-- Section Simple products -->
+    {% set items=[
+      { "src": "/assets/images/min/impact-windows-and-doors-1.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-2.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-3.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-4.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-5.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-6.jpg"},
+      { "src": "/assets/images/min/impact-windows-and-doors-7.jpg"}
+    ] %}
+
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'Impact Window & Door Models' %}
+    {% set slides=items %}
+    {% set titleHtag = 'h2' %}
+    {% include "components/simple-carousel.njk" %}
+    <!-- end section simple products -->
+
+    <!-- Section product gallery -->
+    {% set class='back-main-light mx-auto mt-4 py-5' %}
+    {% set ctitle= 'Product Gallery' %}
+    {% set subtitle='Products' %}
+    {% set gallery=products.impact.image %}
+    {% include "components/gallery.njk" %}
+    <!-- End Section product gallery -->
+
+    <!-- Testimonial -->
+    {% include "components/testimonial.njk" %}
+
+
+
+
+
+
