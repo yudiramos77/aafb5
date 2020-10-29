@@ -1,18 +1,9 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const cleanCss = require("clean-css");
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {    
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig
-        .addPassthroughCopy("./src/assets/images")
-        .addPassthroughCopy("./src/robots.txt")
-        .addPassthroughCopy("./src/favicon*")
-        .addPassthroughCopy("./src/assets/css")
-        .addPassthroughCopy("./src/assets/js")
-        .addPassthroughCopy("./src/assets/permits")
-        .addPassthroughCopy("./src/assets/docs")
-        .addPassthroughCopy("./src/assets/lightbox")
-        .addPassthroughCopy("./src/admin");
     eleventyConfig.addLayoutAlias("posts", "layouts/posts.njk");
     eleventyConfig.addFilter('dump', obj => {
         const getCircularReplacer = () => {
@@ -33,7 +24,29 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("cssmin", function(code) {
         return new cleanCss({}).minify(code).styles;
     });
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+        if (process.env.ELEVENTY_PRODUCTION && outputPath.endsWith(".html")) {
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true
+            });
+            return minified;
+        }
 
+        return content;
+    });
+
+    eleventyConfig
+        .addPassthroughCopy("./src/assets/images")
+        .addPassthroughCopy("./src/robots.txt")
+        .addPassthroughCopy("./src/favicon*")
+        .addPassthroughCopy("./src/assets/css")
+        .addPassthroughCopy("./src/assets/js")
+        .addPassthroughCopy("./src/assets/permits")
+        .addPassthroughCopy("./src/assets/docs")
+        .addPassthroughCopy("./src/assets/lightbox")
+        .addPassthroughCopy("./src/admin");
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk",

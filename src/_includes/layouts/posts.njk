@@ -6,18 +6,20 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "components/metas.njk" %}
+
     <!-- preconnecting -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    {% include "components/metas.njk" %}
     {% include "components/critical-inline-styles.njk" %}
     {%- if ldjson %}
     <script type="application/ld+json">
     {{ ldjson | dump(2) | safe }}
     </script>
     {%-  endif  %}
-    <title>{{ title }}</title>
+
   </head>
   <body>
     
