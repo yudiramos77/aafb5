@@ -6,13 +6,13 @@
     key: Products
     order: 1
 ---
-<section class="hero">
+<div class="hero">
     {% set ctitle= 'Products' %}
     {% set navPages = collections.all | eleventyNavigationBreadcrumb("Products") %}
     {% set breadcrumbs=navPages %}
     {% set featureImage='/assets/images/min/slider1.jpg' %}
     {% include "components/hero-inner.njk" %}
-</section>
+</div>
    
     <!-- Section Products -->
     {% set products= products.items %}

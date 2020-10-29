@@ -7,13 +7,13 @@
     parent: Products
     order: 4
 ---
-<section class="hero">
+<div class="hero">
     {% set ctitle= 'Aluminum Pergolas' %}
     {% set navPages = collections.all | eleventyNavigationBreadcrumb("Aluminum Pergolas") %}
     {% set breadcrumbs=navPages %}
     {% set featureImage='/assets/images/min/slider1.jpg' %}
     {% include "components/hero-inner.njk" %}
-</section>
+</div>
     <!-- Section Intro -->
     {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
     {% set ctitle= 'Aluminum Pergolas' %}

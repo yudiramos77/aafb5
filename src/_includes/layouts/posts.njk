@@ -24,14 +24,14 @@
   <body>
     
       {% include "components/navbar.njk" %}
-      <section class="hero">
+      <div class="hero">
         {% set ctitle= title %}
         {% set navPages = collections.all | eleventyNavigationBreadcrumb("Blog") %}
         {% set breadcrumbs=navPages %}
         {% set featureImage=thumbnail %}
         {% set staticPath={ url: '/posts/', text: 'Blogs', alt: 'All posts'}%}
         {% include "components/hero-inner.njk" %}
-    </section>
+    </div>
       <article>
       <div class="container">
         <div class="row">
@@ -51,7 +51,7 @@
               {% if post.fileSlug !== page.fileSlug %}
                 <div class="col-12 mb-4">
                   <div class="card card-reset card-blog card-blog-related background-light-gradient-main -invert">
-                      <img src="{{ post.data.thumbnail }}" class="card-img-top" alt="..." loading="lazy">
+                      <img src="{{ post.data.thumbnail }}" class="card-img-top" alt="{{ post.data.title }}" loading="lazy">
                       <div class="card-body d-flex flex-column justify-content-end">
                           <div class="card-body_title">
                             <h3 class="headerTitle -small mb-0 "><a href="/posts/{{ post.fileSlug }}/" class="-invert">{{ post.data.title }}</a></h3>
