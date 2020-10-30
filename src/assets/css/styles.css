@@ -584,7 +584,7 @@ body {
 }
 @media (min-width: 1024px){
   .section-content1{
-    margin-top: 70px !important;
+    /*margin-top: 70px !important;*/
   }
 }
 

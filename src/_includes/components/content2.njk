@@ -1,13 +1,13 @@
-<section class="mt-1">
+<section class="{{ sectionClass or 'mt-1'}}">
     <div class="container">
         <div class="row">
-            <div class="{{class}} section-content1 mt-5">
+            <div class="{{class}} section-content1">
                 <div class="content-title mt-2 order-2">
-                    <h1 class="headerTitle">{{ctitle}}</h1>
+                    <{{ titleTag or 'h1'}} class="{{ titleClass or 'headerTitle'}}">{{ctitle}}</{{ titleTag or 'h1'}}>
                 </div>
                 {% if subtitle %}
                 <div class="content-subtitle order-1">
-                    <h2 class="headerSubtitle -decor-hoz -medium">{{subtitle}}</h2>
+                    <{{subtitleTag or 'h2'}} class="headerSubtitle -decor-hoz -medium">{{subtitle}}</{{subtitleTag or 'h2'}}>
                 </div>
                 {% endif %}
                 {% if subsubtitle %}
@@ -15,7 +15,6 @@
                     <span class="headerSubsubtitle">{{subsubtitle}}</span>
                 </div>
                 {% endif %}
-
                 <div class="content-body order-3 mt-4">
                     <div class="bodyContent">{{body | safe }}</div>
                 </div>
